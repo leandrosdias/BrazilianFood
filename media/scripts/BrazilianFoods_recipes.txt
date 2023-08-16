@@ -1,0 +1,19 @@
+module BrazilianFood
+{
+	imports
+	{
+		Base,
+	}	
+
+    recipe Fazer Tapioca
+	{
+        keep Spatula,
+        destroy Pan,
+		BrazilianFood.FarinhaTapioca=1,
+
+		Result 		        : PanwithUncookedTapioca,
+		Time 		        : 20,
+		Category 		    : Cooking,
+		OnGiveXP 		    : Recipe.OnGiveXP.Cooking1,
+	}
+}

@@ -1,0 +1,12 @@
+module BrazilianFood
+{
+   evolvedrecipe TapiocaSalgada
+	{
+		BaseItem:BrazilianFood.PanwithTapioca,
+		MaxItems:5,
+		Cookable:true,
+		ResultItem:BrazilianFood.TapiocaSalgada,
+		Name:Tapioca Salgada,
+		CanAddSpicesEmpty:True,
+	}
+}

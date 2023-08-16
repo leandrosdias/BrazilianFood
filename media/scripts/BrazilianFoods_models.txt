@@ -1,0 +1,33 @@
+module Base
+{
+	model BRFGuarana_Ground
+	{
+		mesh = PopCanRed,
+		texture = WorldItems/Guarana_Ground,
+		scale = 0.8,
+	}
+	model BRFAcai_Ground
+	{
+		mesh = WorldItems/IceCream,
+		texture = WorldItems/Acai_Ground,
+		scale = 0.4,
+	}
+	model BRFAcaiMelted_Ground
+	{
+		mesh = WorldItems/IcecreamMelted,
+		texture = WorldItems/Acai_Ground,
+		scale = 0.4,
+	}
+	model BRFFofura_Ground
+	{
+		mesh = WorldItems/Chips,
+		texture = WorldItems/Fofura_Ground,
+		scale = 0.28,
+	}
+	model FarinhaTapioca_Ground
+	{
+		mesh = WorldItems/Rice,
+		texture = WorldItems/FarinhaTapioca_Ground,
+		scale = 0.2,
+	}
+}
