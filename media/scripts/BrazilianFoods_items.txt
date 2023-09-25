@@ -5,7 +5,7 @@ module BrazilianFood {
 
     item Guarana
 	{
-		DisplayName         = Guarana,
+		DisplayName         = Guaraná,
 		DisplayCategory     = Food,
 		Type                = Food,
 		Weight              = 0.3,
@@ -28,6 +28,33 @@ module BrazilianFood {
 		StaticModel         = BRFGuarana_Ground,
 		WorldStaticModel    = BRFGuarana_Ground,
 		Tags                = HasMetal,
+	}
+
+    item GuaranaJesus
+	{
+		DisplayName = Guraná Jesus,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = guarana_jesus,
+		EvolvedRecipe = Beverage:4;Beverage2:4,
+		FoodType = SoftDrink,
+		CantBeFrozen = TRUE,
+		EatType = popcan,
+		Packaged = TRUE,
+		ReplaceOnUse = Pop2Empty,
+		HungerChange = -8,
+		ThirstChange = -60,
+		UnhappyChange = -10,
+		Calories = 140,
+		Carbohydrates = 39,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		StaticModel = BRFGuaranaJesus_Ground,
+		WorldStaticModel = BRFGuaranaJesus_Ground,
+		Tags = HasMetal,
 	}
 
 	item Acai
@@ -85,7 +112,6 @@ module BrazilianFood {
 		Proteins = 4.5,
 		CustomEatSound = EatingCrispy,
 		WorldStaticModel = BRFFofura_Ground,
-		EvolvedRecipe = TapiocaSalgada:5,
 	}
 
 	item FarinhaTapioca
@@ -98,10 +124,37 @@ module BrazilianFood {
 		DisplayName	=	Farinha Tapioca,
 		Icon	=	farinha_tapioca,
 		WorldStaticModel = FarinhaTapioca_Ground,
-		Tags = Flour,
+		Tags = Farofa,
 	}
 
 	item PanwithUncookedTapioca
+	{
+		DisplayCategory 				= Food,
+		Type 							= Food,
+		DisplayName 					= Frigideira com Tapioca,
+		Icon 							= PanFull,
+		DaysFresh 						= 2,
+		DaysTotallyRotten 				= 5,
+		WorldStaticModel 				= EggOmlette_Ground,
+		CookingSound 					= FryingFood,
+		CanEat							= False,
+		IsCookable 						= TRUE,
+		ReplaceOnUse 					= Pan,
+		MinutesToCook 					= 40,
+		MinutesToBurn 					= 110,
+		HungerChange 					= -15,
+		UnhappyChange 					= 10,
+		Calories 						= 189,
+		Carbohydrates 					= 11.2,
+		Lipids 							= 11.5,
+		Proteins 						= 9.6,
+		WorldStaticModel 				= PanTapioca_Ground,
+		RemoveNegativeEffectOnCooked 	= TRUE,
+		Tags 							= HasMetal,
+		ReplaceOnCooked 				= BrazilianFood.PanwithTapioca,
+	}
+
+	item PanwithTapioca
 	{
 		DisplayCategory 		= Food,
 		Type 					= Food,
@@ -109,46 +162,421 @@ module BrazilianFood {
 		Icon 					= PanFull,
 		DaysFresh 				= 3,
 		DaysTotallyRotten 		= 6,
-		WorldStaticModel 		= EggOmlette_Ground,
+		WorldStaticModel 		= PanTapioca_Ground,
 		CookingSound 			= FryingFood,
-		IsCookable 				= true,
 		MinutesToCook 			= 10,
 		MinutesToBurn 			= 30,
-		ReplaceOnCooked 		= BrazilianFood.PanwithTapioca,
 		CanEat					= False,
 	}
 
-	item PanwithTapioca
+	item Tapioca
 	{
+		DisplayName 			= Tapioca,
 		DisplayCategory 		= Food,
 		Type 					= Food,
-		DisplayName 			= Tapioca,
-		Icon 					= PanFull,
-		Carbohydrates 			= 10,
-		Proteins 				= 15,
-		Lipids 					= 10,
-		Calories 				= 20,
-		DaysFresh 				= 2,
-		DaysTotallyRotten 		= 5,
-		WorldStaticModel 		= EggOmlette_Ground,
-		ReplaceOnUse 			= Pan,
-		HungerChange 			= -40,
+		Weight 					= 0.5,
+		Icon 					= tapioca,
+		DaysFresh 				= 3,
+		DaysTotallyRotten 		= 6,
+		HungerChange			= -14,
+		Calories 				= 123,
+		Carbohydrates 			= 2,
+		Lipids 					= 8.33,
+		Proteins 				= 11,
+		WorldStaticModel 		= BRFTapiocaSalgada_Ground,
 	}
-
+	
 	item TapiocaSalgada
 	{
+		DisplayName 			= Tapioca Salgada,
 		DisplayCategory 		= Food,
 		Type 					= Food,
-		DisplayName 			= Tapioca Salgada,
+		Weight 					= 0.5,
 		Icon 					= tapiocaSalgada,
-		Carbohydrates 			= 10,
-		Proteins 				= 15,
-		Lipids 					= 10,
-		Calories 				= 20,
-		DaysFresh 				= 2,
-		DaysTotallyRotten 		= 5,
-		WorldStaticModel 		= EggOmlette_Ground,
-		ReplaceOnUse 			= Pan,
-		HungerChange 			= -40,
+		DaysFresh 				= 3,
+		DaysTotallyRotten 		= 6,
+		HungerChange			= -14,
+		Calories 				= 123,
+		Carbohydrates 			= 2,
+		Lipids 					= 8.33,
+		Proteins 				= 11,
+		WorldStaticModel 		= BRFTapiocaSalgada_Ground,
+		StaticModel 			= BRFTapiocaSalgada_Ground,
 	}
+
+	item TapiocaDoce
+	{
+		DisplayName 			= Tapioca Doce,
+		DisplayCategory 		= Food,
+		Type 					= Food,
+		Weight 					= 0.5,
+		Icon 					= tapiocaDoce,
+		DaysFresh 				= 3,
+		DaysTotallyRotten 		= 6,
+		HungerChange			= -14,
+		Calories 				= 123,
+		Carbohydrates 			= 2,
+		Lipids 					= 8.33,
+		Proteins 				= 11,
+		WorldStaticModel 		= BRFTapiocaDoce_Ground,
+		StaticModel 			= BRFTapiocaDoce_Ground,
+	}
+
+	item Pacoquinha
+	{
+		DisplayName = Pacoquinha,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = pacoquinha,
+		HungerChange = -2,
+		UnhappyChange = -10,
+		ThirstChange = 10,
+		Calories = 60,
+		Carbohydrates = 15,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = BRFPacoquinha_Ground,
+		StaticModel = BRFPacoquinha_Ground,
+	}
+
+	item Dolly
+	{
+		DisplayName = Dolly,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = dolly,
+		EvolvedRecipe = Beverage:4;Beverage2:4,
+		FoodType = SoftDrink,
+		CantBeFrozen = TRUE,
+		EatType = bottle,
+		Packaged = TRUE,
+		ReplaceOnUse = PopBottleEmpty,
+		HungerChange = -12,
+		ThirstChange = -85,
+		UnhappyChange = -10,
+		Calories = 400,
+		Carbohydrates = 104,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottlePlastic,
+		StaticModel = BRFDolly_Ground,
+		WorldStaticModel = BRFDolly_Ground,
+	}
+
+	item PotOfFeijaoPreto
+	{
+		DisplayName = Panela de Feijão,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = PotFull,
+		CookingSound = BoilingFood,
+		EatType = Pot,
+		IsCookable = TRUE,
+		ReplaceOnUse = Pot,
+		DangerousUncooked = true,
+		HungerChange = -20,
+		ThirstChange = -20,
+		UnhappyChange = 30,
+		Calories = 310,
+		Carbohydrates = 26.3,
+		Lipids = 14.5,
+		Proteins = 3.8,
+		ReplaceOnCooked = BrazilianFood.PotOfFeijaoPretoCozido,
+		MinutesToCook = 50,
+		MinutesToBurn = 100,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		CanEat = False,
+		CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+		StaticModel = CookingPot,
+		WorldStaticModel = PanelaFeijaoPreto_Ground,
+		Tags = HasMetal,
+	}
+
+	item PotOfFeijaoPretoCozido
+	{
+		DisplayName = Panela de Feijão Preto,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = PotFull,
+		CookingSound = BoilingFood,
+		EatType = Pot,
+		ReplaceOnUse = Pot,
+		MinutesToCook = 50,
+		MinutesToBurn = 100,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -40,
+		ThirstChange = -40,
+		UnhappyChange = -20,
+		Calories = 202,
+		Carbohydrates = 25,
+		Lipids = 4.5,
+		Proteins = 14,
+		CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+		StaticModel = CookingPot,
+		WorldStaticModel = PanelaFeijaoPreto_Ground,
+		Tags = HasMetal,
+	}
+
+	item Feijoada
+	{
+		DisplayName = Feijoada,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = PotFull,
+		CookingSound = BoilingFood,
+		EatType = Pot,
+		ReplaceOnUse = Pot,
+		MinutesToCook = 10,
+		MinutesToBurn = 20,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -60,
+		ThirstChange = -50,
+		UnhappyChange = -30,
+		Calories = 232,
+		Carbohydrates = 45,
+		Lipids = 4.5,
+		Proteins = 14,
+		CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+		StaticModel = CookingPot,
+		WorldStaticModel = PanelaFeijaoPreto_Ground,
+		Tags = HasMetal,
+	}
+
+	item Yoki
+	{
+	    DisplayCategory = Food,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta	=	0.1,
+		DisplayName	=	Yoki,
+		Icon	=	yoki,
+		WorldStaticModel = Yoki_Ground,
+		Tags = Farofa,
+		EvolvedRecipe = BrazilianFood.Feijoada:5,
+	}
+
+	item PaoDeQueijoCongelado
+	{
+		DisplayCategory = Food,
+		Weight				=	1,
+		Type				=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta			=	0.1,
+		DisplayName			=	Pão de Queijo,
+		Icon				=	paodequeijo,
+		WorldStaticModel 	=   PaoDeQueijo_Ground,
+		Tags 				=   Food,
+	}
+
+	item DoughOfPaoDeQueijo
+	{
+		DisplayName = Bandeja de Pão de Queijo,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.9,
+		Icon = BakingTray_CookiesBaked,
+		IsCookable = true,
+		ReplaceOnUse = BakingTray,
+		MinutesToCook = 40,
+		MinutesToBurn = 60,
+		DaysFresh = 7,
+		DaysTotallyRotten = 30,
+		HungerChange = -23,
+		UnhappyChange = -60,
+		Calories = 1020,
+		Carbohydrates = 150,
+		Lipids = 54,
+		Proteins = 12,
+		CustomEatSound = EatingCrispy,
+		WorldStaticModel = BakingTray_PaoDeQueijo,
+	}
+
+	item PipocaDoce
+	{
+		DisplayName	= Pipoca Doce,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = pipocaDoce,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		ThirstChange = 20,
+		Calories = 200,
+		Carbohydrates = 30,
+		Lipids = 8,
+        WorldStaticModel = PipocaDoce_Ground,
+	}
+
+	item CoroteFull
+	{
+		DisplayName = Corote,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.7,
+		Icon = corote,
+		EvolvedRecipe = Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4,
+		FoodType = Liquor,
+		AlcoholPower = 4,
+		Alcoholic = TRUE,
+		CantBeFrozen = TRUE,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		ReplaceOnUse = PopBottleEmpty,
+		HungerChange = -20,
+		ThirstChange = -20,
+		UnhappyChange = -10,
+		Calories = 1500,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = BRFCorote_Ground,
+		WorldStaticModel = BRFCorote_Ground,
+		Tags = Liquor,
+	}
+
+	item BolachaDoce
+	{
+		DisplayName	= Bolacha Doce,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = bolachaDoce,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		ThirstChange = 10,
+		Calories = 100,
+		Carbohydrates = 30,
+		Lipids = 8,
+        WorldStaticModel = BRFBolachaDoce_Ground,
+	}
+
+	item Bis
+	{
+		DisplayName = Bis,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = bis,
+		EvolvedRecipe = Cake:20;PieSweet:20;ConeIcecream:5,
+		FoodType = NoExplicit,
+		Packaged = TRUE,
+		HungerChange = -20,
+		UnhappyChange = -10,
+		Calories = 850,
+		Carbohydrates = 110,
+		Lipids = 66,
+		Proteins = 10,
+		WorldStaticModel = BRFBis_Ground,
+	}
+
+	item MassaBolinhoCaipira
+	{
+		DisplayName = Massa de Bolinho Caipira,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Dough,
+		IsCookable = FALSE,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		WorldStaticModel = BreadDough,
+	}
+
+	item BolinhoCaipira
+	{
+		DisplayName 			        = Bolinho Caipira,
+		DisplayCategory 		        = Food,
+		Type 					        = Food,
+		Weight 					        = 0.2,
+		Icon 					        = bolinhoCaipira,
+		UnhappyChange                   = 40,
+		ThirstChange                    = 20,
+		DaysFresh 				        = 3,
+		DaysTotallyRotten 		        = 6,
+		IsCookable                      = true,
+		RemoveNegativeEffectOnCooked 	= true,
+		MinutesToCook                   = 15,
+		MinutesToBurn                   = 25,
+		HungerChange			        = -15,
+		Calories 				        = 110,
+		Carbohydrates 			        = 10,
+		Lipids 					        = 5.33,
+		Proteins 				        = 7,
+		WorldStaticModel 		        = BRFBolinhoCaipira,
+		StaticModel 		            = BRFBolinhoCaipiraStatic,
+	}
+
+	item MassaCoxinha
+	{
+		DisplayName = Massa de Coxinha,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = Dough,
+		IsCookable = FALSE,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		WorldStaticModel = BreadDough,
+	}
+
+	item CoxinhaCrua
+	{
+		DisplayName 			        = Coxinha,
+		DisplayCategory 		        = Food,
+		Type 					        = Food,
+		Weight 					        = 0.3,
+		Icon 					        = coxinha,
+		UnhappyChange                   = 30,
+		ThirstChange                    = 20,
+		DaysFresh 				        = 3,
+		DaysTotallyRotten 		        = 6,
+		IsCookable                      = true,
+		RemoveNegativeEffectOnCooked 	= true,
+		MinutesToCook                   = 15,
+		MinutesToBurn                   = 25,
+		HungerChange			        = -15,
+		Calories 				        = 110,
+		Carbohydrates 			        = 10,
+		Lipids 					        = 5.33,
+		Proteins 				        = 7,
+		WorldStaticModel 		        = BRFCoxinha,
+		StaticModel 		            = BRFCoxinha,
+		ReplaceOnCooked 				= BrazilianFood.Coxinha,
+	}
+
+	item Coxinha
+	{
+		DisplayName 			        = Coxinha,
+		DisplayCategory 		        = Food,
+		Type 					        = Food,
+		Weight 					        = 0.3,
+		Icon 					        = coxinha,
+		UnhappyChange                   = -30,
+		ThirstChange                    = 5,
+		DaysFresh 				        = 3,
+		DaysTotallyRotten 		        = 6,
+		HungerChange			        = -20,
+		Calories 				        = 120,
+		Carbohydrates 			        = 15,
+		Lipids 					        = 6.33,
+		Proteins 				        = 6,
+		WorldStaticModel 		        = BRFCoxinha,
+		StaticModel 		            = BRFCoxinha,
+	}
+	
 }

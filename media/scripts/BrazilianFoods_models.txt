@@ -30,4 +30,111 @@ module Base
 		texture = WorldItems/FarinhaTapioca_Ground,
 		scale = 0.2,
 	}
+	model BRFGuaranaJesus_Ground
+	{
+		mesh = PopCanRed,
+		texture = WorldItems/GuaranaJesus_Ground,
+		scale = 0.8,
+	}
+	model PanTapioca_Ground
+    {
+        mesh = WorldItems/GriddlePanFriedVegetables,
+        texture = WorldItems/GriddlePanTapioca,
+        scale = 0.4,
+    }
+	model BRFTapiocaDoce_Ground
+    {
+        mesh = WorldItems/EggOmlette,
+		texture = WorldItems/TapiocaDoce_Ground,
+        scale = 0.4,
+    }
+	model BRFTapiocaSalgada_Ground
+    {
+        mesh = WorldItems/EggOmlette,
+		texture = WorldItems/TapiocaSalgada_Ground,
+        scale = 0.4,
+    }
+	model BRFPacoquinha_Ground
+	{
+		mesh = WorldItems/Rice,
+		texture = WorldItems/Pacoquinha_Ground,
+		scale = 0.1,
+	}
+	model BRFDolly_Static
+	{
+		mesh = WorldItems/PopBottle,
+		texture = WorldItems/Dolly_Ground,
+		scale = 0.017,
+	}
+	model BRFDolly_Ground
+	{
+		mesh = PopBottle,
+		texture = WorldItems/Dolly_Ground,
+	}
+	model Yoki_Ground
+	{
+		mesh = WorldItems/Rice,
+		texture = WorldItems/Yoki_Ground,
+		scale = 0.2,
+	}
+	model PanelaFeijaoPreto_Ground
+    {
+        mesh = WorldItems/CookingPotFull,
+        texture = WorldItems/FeijaoPreto_Ground,
+        scale = 0.4,
+    }
+	model PaoDeQueijo_Ground
+	{
+		mesh = WorldItems/Rice,
+		texture = WorldItems/PaoDeQueijo_Ground,
+		scale = 0.2,
+	}
+	model BakingTray_PaoDeQueijo
+    {
+        mesh = WorldItems/BakingTray_Cookies,
+		texture = WorldItems/BakingTray_PaoDeQueijo_Ground,
+        scale = 0.2,
+    }
+	model PipocaDoce_Ground
+	{
+		mesh = WorldItems/CandyPackage,
+		texture = WorldItems/PipocaDoceGround,
+		scale = 0.4,
+	}
+	model BRFCorote_Ground
+	{
+		mesh = PopBottle,
+		texture = WorldItems/Corote_Ground,
+		scale = 0.5,
+	}
+	model BRFBolachaDoce_Ground
+	{
+		mesh = WorldItems/Baguette,
+		texture = WorldItems/BolachaDoce_Ground,
+		scale = 0.3,
+	}
+	model BRFBis_Ground
+	{
+		mesh = WorldItems/HandGunAmmoBox,
+		texture = WorldItems/Bis_Ground,
+		scale = 0.4,
+	}
+	model BRFBolinhoCaipira
+	{
+		mesh = BolinhoCaipira,
+		texture = WorldItems/Coxinha_Ground,
+		scale = 0.2,
+	}
+	model BRFBolinhoCaipiraStatic
+	{
+		mesh = BolinhoCaipiraStatic,
+		texture = WorldItems/Coxinha_Ground,
+		scale = 0.2,
+	}
+	model BRFCoxinha
+	{
+		mesh = Coxinha,
+		texture = WorldItems/Coxinha_Ground,
+		scale = 0.08,
+	}
 }

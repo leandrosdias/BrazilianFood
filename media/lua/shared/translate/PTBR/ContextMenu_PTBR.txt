@@ -1,0 +1,7 @@
+ContextMenu_PTBR = {
+
+	ContextMenu_EvolvedRecipe_BrazilianFood.TapiocaSalgadaBase = "Tapioca Salgada",
+	ContextMenu_EvolvedRecipe_BrazilianFood.TapiocaDoceBase = "Tapioca Doce",
+	ContextMenu_EvolvedRecipe_BrazilianFood.FeijaoPreto = "Panela de Feijão",
+	ContextMenu_EvolvedRecipe_BrazilianFood.Feijoada = "Feijoada",
+} 

@@ -29,6 +29,9 @@ local function preDistributionMerge()
 			"PopBottle", 4,
 			"Taco", 4,
 			"BrazilianFood.Guarana", 4,
+			"BrazilianFood.GuaranaJesus", 4,
+			"BrazilianFood.Dolly", 4,
+			"BrazilianFood.PaoDeQueijoCongelado", 2,
 		}
 	}
 
@@ -51,7 +54,9 @@ local function preDistributionMerge()
 			"PopBottle", 6,
 			"TortillaChips", 10,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 10,
 			"BrazilianFood.Fofura", 10,
+			"BrazilianFood.Dolly", 6,
 		},
 		junk = {	
 			rolls = 1,
@@ -74,6 +79,8 @@ local function preDistributionMerge()
 			"WaterBottleFull", 8,
 			"WaterBottleFull", 8,
 			"BrazilianFood.Guarana", 8,
+			"BrazilianFood.GuaranaJesus", 8,
+			"BrazilianFood.Dolly", 8,
 		}
 	}
 
@@ -111,6 +118,7 @@ local function preDistributionMerge()
 			"Yoyo", 4,
 			"BrazilianFood.Guarana", 1,
 			"BrazilianFood.Fofura", 1,
+			"BrazilianFood.Bis", 1,
 		}
 	}
 
@@ -125,6 +133,8 @@ local function preDistributionMerge()
 			"Pop3", 10,
 			"BrazilianFood.Guarana", 20,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 20,
+			"BrazilianFood.GuaranaJesus", 10,
 		}
 	}
 
@@ -164,6 +174,9 @@ local function preDistributionMerge()
 			"Yoghurt", 4,
 			"Yoghurt", 4,
 			"BrazilianFood.Guarana", 4,
+			"BrazilianFood.GuaranaJesus", 4,
+			"BrazilianFood.Dolly", 4,
+			"BrazilianFood.PaoDeQueijoCongelado", 3,
 		}
 	}
 
@@ -194,6 +207,9 @@ local function preDistributionMerge()
 			"WaterBottleFull", 4,
 			"Yoghurt", 4,
 			"BrazilianFood.Guarana", 4,
+			"BrazilianFood.GuaranaJesus", 4,
+			"BrazilianFood.Dolly", 4,
+			"BrazilianFood.PaoDeQueijoCongelado", 5,
 		}
 	}
 
@@ -210,6 +226,10 @@ local function preDistributionMerge()
 			"PopBottle", 10,
 			"BrazilianFood.Guarana", 20,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 20,
+			"BrazilianFood.GuaranaJesus", 10,
+			"BrazilianFood.Dolly", 20,
+			"BrazilianFood.Dolly", 10,
 		}
 	}
 
@@ -262,6 +282,9 @@ local function preDistributionMerge()
 			"WaterBottleFull", 1,
 			"Yoghurt", 0.5,
 			"BrazilianFood.Guarana", 2,
+			"BrazilianFood.GuaranaJesus", 2,
+			"BrazilianFood.Dolly", 2,
+			"BrazilianFood.PaoDeQueijoCongelado", 6,
 		}
 	}
 
@@ -302,7 +325,12 @@ local function preDistributionMerge()
 			"TortillaChips", 10,
 			"WaterBottleFull", 10,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 10,
 			"BrazilianFood.Fofura", 10,
+			"BrazilianFood.Dolly", 10,
+			"BrazilianFood.PipocaDoce", 8,
+			"BrazilianFood.BolachaDoce", 8,
+			"BrazilianFood.Bis", 10,
 		}
 	}
 
@@ -321,6 +349,10 @@ local function preDistributionMerge()
 			"Pop3", 10,
 			"BrazilianFood.Guarana", 20,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 20,
+			"BrazilianFood.GuaranaJesus", 10,
+			"BrazilianFood.Dolly", 20,
+			"BrazilianFood.Dolly", 10,
 		}
 	}
 
@@ -344,6 +376,10 @@ local function preDistributionMerge()
 			"Wine", 1,
 			"Wine2", 1,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 10,
+			"BrazilianFood.Dolly", 8,
+			"BrazilianFood.Dolly", 8,
+			"BrazilianFood.CoroteFull", 2,
 		}
 	}
 
@@ -365,6 +401,10 @@ local function preDistributionMerge()
 			"PopBottle", 6,
 			"WhiskeyFull", 2,
 			"BrazilianFood.Guarana", 6,
+			"BrazilianFood.GuaranaJesus", 6,
+			"BrazilianFood.Dolly", 6,
+			"BrazilianFood.Dolly", 6,
+			"BrazilianFood.CoroteFull", 2,
 		}
 	}
 
@@ -402,7 +442,13 @@ local function preDistributionMerge()
 			"TortillaChips", 10,
 			"WaterBottleFull", 10,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 10,
 			"BrazilianFood.Fofura", 10,
+			"BrazilianFood.Dolly", 10,
+			"BrazilianFood.Dolly", 20,
+			"BrazilianFood.PipocaDoce", 8,
+			"BrazilianFood.BolachaDoce", 8,
+			"BrazilianFood.Bis", 10,
 		}
 	}
 
@@ -421,6 +467,10 @@ local function preDistributionMerge()
 			"WaterBottleFull", 10,
 			"BrazilianFood.Guarana", 20,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 20,
+			"BrazilianFood.GuaranaJesus", 10,
+			"BrazilianFood.Dolly", 20,
+			"BrazilianFood.Dolly", 10,
 		}
 	}
 
@@ -439,6 +489,12 @@ local function preDistributionMerge()
 			"PopBottle", 10,
 			"BrazilianFood.Guarana", 20,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 20,
+			"BrazilianFood.GuaranaJesus", 10,
+			"BrazilianFood.Dolly", 20,
+			"BrazilianFood.Dolly", 20,
+			"BrazilianFood.Dolly", 10,
+			"BrazilianFood.Dolly", 10,
 		}
 	}
 
@@ -573,6 +629,8 @@ local function preDistributionMerge()
 			"PiePumpkin", 4,
 			"PiePumpkin", 4,
 			"BrazilianFood.Fofura", 8,
+			"BrazilianFood.Bis", 10,
+			"BrazilianFood.Bis", 10,
 		}
 	}
 
@@ -693,6 +751,9 @@ local function preDistributionMerge()
 			"TunaTin", 1,
 			"TVDinner", 1,
 			"BrazilianFood.Fofura", 1,
+			"BrazilianFood.Pacoquinha", 1,
+			"BrazilianFood.Yoki", 1,
+			"BrazilianFood.Bis", 1,
 		}
 	}
 
@@ -727,6 +788,8 @@ local function preDistributionMerge()
 			"TortillaChips", 4,
 			"TVDinner", 4,
 			"BrazilianFood.Fofura", 4,
+			"BrazilianFood.Yoki", 10,
+			"BrazilianFood.Bis", 6,
 		},
 		junk = {	
 			rolls = 1,
@@ -797,6 +860,8 @@ local function preDistributionMerge()
 			"TunaTin", 4,
 			"WhiskeyFull", 0.01,
 			"BrazilianFood.Fofura", 10,
+			"BrazilianFood.CoroteFull", 0.01,
+			"BrazilianFood.Bis", 4,
 		},
 		junk = {	
 			rolls = 1,
@@ -836,6 +901,9 @@ local function preDistributionMerge()
 			"SunflowerSeeds", 6,
 			"TortillaChips", 10,
 			"BrazilianFood.Fofura", 10,
+			"BrazilianFood.PipocaDoce", 8,
+			"BrazilianFood.BolachaDoce", 8,
+			"BrazilianFood.Bis", 8,
 		}
 	}
 
@@ -952,6 +1020,8 @@ local function preDistributionMerge()
 			"Yeast", 10,
 			"BrazilianFood.FarinhaTapioca", 10,
 			"BrazilianFood.FarinhaTapioca", 20,
+			"BrazilianFood.Yoki", 10,
+			"BrazilianFood.Yoki", 20,
 		},
 		junk = {	
 			rolls = 1,
@@ -1012,6 +1082,7 @@ local function preDistributionMerge()
 			"SugarBrown", 6,
 			"Yeast", 4,
 			"BrazilianFood.FarinhaTapioca", 10,
+			"BrazilianFood.Bis", 8,
 		},
 		junk = {	
 			rolls = 1,
@@ -1105,6 +1176,839 @@ local function preDistributionMerge()
 
 	}
 
+	ProceduralDistributions.list.CandyStoreSnacks = {
+		rolls = 4,
+		items = {
+			"CandyFruitSlices", 10,
+			"Candycane", 10,
+			"Chocolate", 10,
+			"ChocolateCoveredCoffeeBeans", 10,
+			"Gum", 10,
+			"GummyBears", 10,
+			"GummyWorms", 10,
+			"HardCandies", 10,
+			"JellyBeans", 10,
+			"Jujubes", 10,
+			"LicoriceBlack", 10,
+			"LicoriceRed", 10,
+			"MintCandy", 10,
+			"Modjeska", 10,
+			"Peppermint", 10,
+			"RockCandy", 10,
+			"BrazilianFood.Pacoquinha", 10,
+			"BrazilianFood.Bis", 10,
+		}
+	}
+
+	ProceduralDistributions.list.GigamartCandy = {
+		rolls = 4,
+		items = {
+			"CandyFruitSlices", 10,
+			"CandyPackage", 10,
+			"Candycane", 10,
+			"Candycane", 10,
+			"Chocolate", 10,
+			"ChocolateCoveredCoffeeBeans", 10,
+			"GranolaBar", 10,
+			"Gum", 10,
+			"GummyBears", 10,
+			"GummyWorms", 10,
+			"HardCandies", 10,
+			"JellyBeans", 10,
+			"Jujubes", 10,
+			"LicoriceBlack", 10,
+			"LicoriceRed", 10,
+			"MintCandy", 10,
+			"Modjeska", 10,
+			"Peppermint", 10,
+			"RockCandy", 10,
+			"BrazilianFood.Pacoquinha", 10,
+			"BrazilianFood.Bis", 10,
+		}
+	}
+
+	ProceduralDistributions.list.CrateSodaBottles = {
+		rolls = 4,
+		items = {
+			"PopBottle", 50,
+			"PopBottle", 20,
+			"PopBottle", 20,
+			"PopBottle", 10,
+			"PopBottle", 10,
+			"BrazilianFood.Dolly", 50,
+			"BrazilianFood.Dolly", 20,
+			"BrazilianFood.Dolly", 20,
+			"BrazilianFood.Dolly", 10,
+			"BrazilianFood.Dolly", 10,
+		}
+	}
+
+	ProceduralDistributions.list.FridgeBottles = {
+		rolls = 4,
+		items = {
+			"WaterBottleFull", 20,
+			"WaterBottleFull", 20,
+			"WaterBottleFull", 10,
+			"WaterBottleFull", 10,
+			"PopBottle", 20,
+			"PopBottle", 20,
+			"PopBottle", 10,
+			"PopBottle", 10,
+			"BrazilianFood.Dolly", 20,
+			"BrazilianFood.Dolly", 20,
+			"BrazilianFood.Dolly", 10,
+			"BrazilianFood.Dolly", 10,
+		}
+	}
+
+	ProceduralDistributions.list.FridgeGeneric = {
+		rolls = 4,
+		items = {
+			"Apple", 2,
+			"Avocado", 1,
+			"Baloney", 0.8,
+			"Banana", 2,
+			"BeerBottle", 1,
+			"BeerCan", 1,
+			"BellPepper", 1,
+			"Broccoli", 2,
+			"Butter", 2,
+			"Carrots", 2,
+			"Cheese", 2,
+			"Cherry", 2,
+			"Chicken", 0.8,
+			"Corn", 2,
+			"EggCarton", 0.8,
+			"Eggplant", 2,
+			"Grapefruit", 2,
+			"Grapes", 2,
+			"Ham", 0.8,
+			"Hotsauce", 0.20,
+			"JuiceBox", 1,
+			"Ketchup", 0.20,
+			"Lard", 1,
+			"Leek", 2,
+			"Lemon", 2,
+			"Lettuce", 2,
+			"Lime", 2,
+			"MapleSyrup", 0.20,
+			"Margarine", 2,
+			"MeatPatty", 0.8,
+			"Milk", 4,
+			"MincedMeat", 0.8,
+			"Mustard", 0.20,
+			"MuttonChop", 0.5,
+			"Onion", 2,
+			"Orange", 2,
+			"Paperbag_Jays", 0.1,
+			"Paperbag_Spiffos", 0.1,
+			"Peach", 2,
+			"Pear", 2,
+			"PepperJalapeno", 1,
+			"Pickles", 6,
+			"Pineapple", 1,
+			"PopBottle", 2,
+			"PorkChop", 0.8,
+			"Processedcheese", 6,
+			"Salami", 0.8,
+			"Salmon", 0.5,
+			"Sausage", 0.8,
+			"Soysauce", 0.20,
+			"Steak", 0.5,
+			"WaterBottleFull", 1,
+			"Watermelon", 0.20,
+			"Yoghurt", 1,
+			"Zucchini", 2,
+			"farming.Bacon", 0.8,
+			"farming.Cabbage", 2,
+			"farming.MayonnaiseFull", 0.20,
+			"farming.RedRadish", 2,
+			"farming.RemouladeFull", 0.20,
+			"farming.Strewberrie", 2,
+			"farming.Tomato", 2,
+			"BrazilianFood.Dolly", 2,
+		}
+	}
+
+	ProceduralDistributions.list.FridgeRich = {
+		rolls = 4,
+		items = {
+			"Apple", 2,
+			"Avocado", 2,
+			"Baloney", 2,
+			"Banana", 2,
+			"BeerBottle", 4,
+			"BellPepper", 2,
+			"Broccoli", 2,
+			"Butter", 4,
+			"Carrots", 2,
+			"Cheese", 2,
+			"Cherry", 2,
+			"Chicken", 0.8,
+			"Corn", 2,
+			"EggCarton", 0.8,
+			"Eggplant", 2,
+			"Grapefruit", 2,
+			"Grapes", 2,
+			"Ham", 0.8,
+			"Hotsauce", 0.20,
+			"JuiceBox", 1,
+			"Ketchup", 0.20,
+			"Lard", 2,
+			"Leek", 2,
+			"Lemon", 2,
+			"Lettuce", 2,
+			"Lime", 2,
+			"Lobster", 0.8,
+			"MapleSyrup", 0.20,
+			"Margarine", 4,
+			"MeatPatty", 0.8,
+			"Milk", 4,
+			"MincedMeat", 0.8,
+			"Mustard", 0.20,
+			"MuttonChop", 0.8,
+			"Onion", 2,
+			"Orange", 2,
+			"Peach", 2,
+			"Pear", 2,
+			"PepperJalapeno", 2,
+			"Pickles", 6,
+			"Pineapple", 2,
+			"PopBottle", 2,
+			"PorkChop", 0.8,
+			"Processedcheese", 6,
+			"Salami", 0.8,
+			"Salmon", 0.8,
+			"Sausage", 0.8,
+			"Soysauce", 0.20,
+			"Squid", 0.8,
+			"Steak", 0.8,
+			"WaterBottleFull", 1,
+			"Watermelon", 0.20,
+			"Wine", 1,
+			"Wine2", 1,
+			"Yoghurt", 1,
+			"Zucchini", 4,
+			"farming.Bacon", 0.8,
+			"farming.Cabbage", 2,
+			"farming.MayonnaiseFull", 0.20,
+			"farming.RedRadish", 2,
+			"farming.RemouladeFull", 0.20,
+			"farming.Strewberrie", 2,
+			"farming.Tomato", 2,
+			"BrazilianFood.Dolly", 2,
+			"BrazilianFood.PaoDeQueijoCongelado", 2,
+		}
+	}
+
+	ProceduralDistributions.list.CratePasta = {
+		rolls = 4,
+		items = {
+			"Pasta", 50,
+			"Pasta", 20,
+			"Pasta", 20,
+			"Pasta", 10,
+			"Pasta", 10,
+			"BrazilianFood.Yoki", 50,
+			"BrazilianFood.Yoki", 20,
+			"BrazilianFood.Yoki", 20,
+			"BrazilianFood.Yoki", 10,
+			"BrazilianFood.Yoki", 10,
+		}
+	}
+
+	ProceduralDistributions.list.GigamartDryGoods = {
+		rolls = 4,
+		items = {
+			"BouillonCube", 10,
+			"Cereal", 10,
+			"Coffee2", 10,
+			"Crackers", 10,
+			"DriedBlackBeans", 8,
+			"DriedChickpeas", 8,
+			"DriedKidneyBeans", 8,
+			"DriedLentils", 8,
+			"DriedSplitPeas", 8,
+			"DriedWhiteBeans", 8,
+			"Macandcheese", 10,
+			"Pasta", 10,
+			"Ramen", 10,
+			"Rice", 10,
+			"TVDinner", 10,
+			"TacoShell", 10,
+			"Teabag2", 10,
+			"BrazilianFood.Yoki", 10,
+		}
+	}
+
+	ProceduralDistributions.list.BarCounterLiquor = {
+		rolls = 4,
+		items = {
+			"WhiskeyFull", 20,
+			"WhiskeyFull", 10,
+			"Wine", 20,
+			"Wine", 10,
+			"Wine2", 20,
+			"Wine2", 10,
+			"BeerCan", 20,
+			"BeerCan", 20,
+			"BeerCan", 10,
+			"BeerCan", 10,
+			"BeerBottle", 20,
+			"BeerBottle", 20,
+			"BeerBottle", 10,
+			"BeerBottle", 10,
+			"BrazilianFood.CoroteFull", 20,
+			"BrazilianFood.CoroteFull", 10,
+		},
+		junk = {	
+			rolls = 1,
+			items = {
+				"DishCloth", 20,
+			}
+		}
+
+	}
+
+	ProceduralDistributions.list.BarCounterWeapon = {
+		rolls = 4,
+		items = {
+			"Bag_ShotgunDblSawnoffBag", 0.01,
+			"BeerBottle", 20,
+			"BeerBottle", 20,
+			"BeerBottle", 10,
+			"BeerBottle", 10,
+			"BeerCan", 20,
+			"BeerCan", 20,
+			"BeerCan", 10,
+			"BeerCan", 10,
+			"DoubleBarrelShotgunSawnoff", 0.1,
+			"WhiskeyFull", 20,
+			"WhiskeyFull", 10,
+			"Wine", 20,
+			"Wine", 10,
+			"Wine2", 20,
+			"Wine2", 10,
+			"BrazilianFood.CoroteFull", 20,
+			"BrazilianFood.CoroteFull", 10,
+		},
+		junk = {	
+			rolls = 1,
+			items = {
+				"DishCloth", 20,
+			}
+		}
+
+	}
+
+	ProceduralDistributions.list.BarShelfLiquor = {
+		rolls = 4,
+		items = {
+			"BeerBottle", 20,
+			"BeerBottle", 20,
+			"BeerBottle", 10,
+			"BeerBottle", 10,
+			"BeerCan", 20,
+			"BeerCan", 20,
+			"BeerCan", 10,
+			"BeerCan", 10,
+			"WhiskeyFull", 20,
+			"WhiskeyFull", 10,
+			"Wine", 20,
+			"Wine", 10,
+			"Wine2", 20,
+			"Wine2", 10,
+			"BrazilianFood.CoroteFull", 20,
+			"BrazilianFood.CoroteFull", 10,
+		}
+	}
+
+	ProceduralDistributions.list.DishCabinetGeneric = {
+		rolls = 4,
+		items = {
+			"Corkscrew", 2,
+			"GlassWine", 20,
+			"GlassWine", 10,
+			"IcePick", 0.1,
+			"PlateFancy", 20,
+			"PlateFancy", 10,
+			"Teacup", 20,
+			"Teacup", 10,
+			"WhiskeyFull", 4,
+			"Wine", 6,
+			"Wine2", 6,
+			"BrazilianFood.CoroteFull", 4,
+		}
+	}
+
+	ProceduralDistributions.list.DishCabinetLiquor = {
+		rolls = 4,
+		items = {
+			"Corkscrew", 2,
+			"GlassWine", 20,
+			"GlassWine", 10,
+			"IcePick", 0.1,
+			"WhiskeyFull", 20,
+			"WhiskeyFull", 10,
+			"Wine", 20,
+			"Wine", 10,
+			"Wine2", 20,
+			"Wine2", 10,
+			"BrazilianFood.CoroteFull", 20,
+			"BrazilianFood.CoroteFull", 10,
+		}
+	}
+
+	ProceduralDistributions.list.DrugShackDrugs = {
+		rolls = 4,
+		items = {
+			"BeerBottle", 20,
+			"BeerBottle", 10,
+			"BeerCan", 20,
+			"BeerCan", 10,
+			"Cigarettes", 20,
+			"Cigarettes", 10,
+			"Pills", 20,
+			"Pills", 10,
+			"WhiskeyFull", 20,
+			"WhiskeyFull", 10,
+			"BrazilianFood.CoroteFull", 20,
+			"BrazilianFood.CoroteFull", 10,
+		}
+	}
+
+	ProceduralDistributions.list.FoodGourmet = {
+		rolls = 4,
+		items = {
+			"BookCooking1", 10,
+			"BookCooking2", 8,
+			"BookCooking3", 6,
+			"BookCooking4", 4,
+			"BookCooking5", 2,
+			"Corkscrew", 2,
+			"IcePick", 0.1,
+			"GlassWine", 20,
+			"GlassWine", 10,
+			"WhiskeyFull", 20,
+			"WhiskeyFull", 10,
+			"Wine", 20,
+			"Wine", 10,
+			"Wine2", 20,
+			"Wine2", 10,
+			"BrazilianFood.CoroteFull", 20,
+			"BrazilianFood.CoroteFull", 10,
+		}
+	}
+
+	ProceduralDistributions.list.JanitorMisc = {
+		rolls = 4,
+		items = {
+			"Cigarettes", 8,
+			"ComicBook", 4,
+			"Glasses_SafetyGoggles", 8,
+			"HottieZ", 1,
+			"Lighter", 4,
+			"Lunchbag", 10,
+			"Lunchbox", 10,
+			"Lunchbox2", 0.001,
+			"Magazine", 20,
+			"Magazine", 10,
+			"MagazineCrossword1", 2,
+			"MagazineCrossword2", 2,
+			"MagazineCrossword3", 2,
+			"MagazineWordsearch1", 2,
+			"MagazineWordsearch2", 2,
+			"MagazineWordsearch3", 2,
+			"Matches", 8,
+			"Mugl", 4,
+			"MugRed", 4,
+			"MugWhite", 4,
+			"Newspaper", 10,
+			"Radio.WalkieTalkie2", 2,
+			"RippedSheets", 20,
+			"RippedSheets", 10,
+			"RippedSheetsDirty", 20,
+			"RippedSheetsDirty", 10,
+			"WhiskeyFull", 0.1,
+			"BrazilianFood.CoroteFull", 0.1,
+		}
+	}
+
+	ProceduralDistributions.list.MechanicShelfMisc = {
+		rolls = 4,
+		items = {
+			"Bleach", 8,
+			"Broom", 10,
+			"BucketEmpty", 10,
+			"Cigarettes", 8,
+			"CleaningLiquid2", 4,
+			"Garbagebag", 10,
+			"Glasses_SafetyGoggles", 8,
+			"HottieZ", 0.1,
+			"Magazine", 10,
+			"Mop", 10,
+			"Newspaper", 10,
+			"RippedSheets", 20,
+			"RippedSheets", 10,
+			"RippedSheetsDirty", 20,
+			"RippedSheetsDirty", 10,
+			"Tarp", 10,
+			"WhiskeyFull", 0.1,
+			"BrazilianFood.CoroteFull", 0.1,
+		}
+	}
+
+	ProceduralDistributions.list.OfficeDesk = {
+		rolls = 4,
+		items = {
+			"BluePen", 8,
+			"Briefcase", 0.5,
+			"CardDeck", 1,
+			"Cigarettes", 8,
+			"Cologne", 1,
+			"Comb", 2,
+			"Disc_Retail", 2,
+			"Eraser", 8,
+			"Glue", 2,
+			"HolePuncher", 4,
+			"LetterOpener", 1,
+			"Lighter", 4,
+			"Lipstick", 1,
+			"Magazine", 10,
+			"MagazineCrossword1", 2,
+			"MagazineCrossword2", 2,
+			"MagazineCrossword3", 2,
+			"MagazineWordsearch1", 2,
+			"MagazineWordsearch2", 2,
+			"MagazineWordsearch3", 2,
+			"MakeupEyeshadow", 1,
+			"MakeupFoundation", 1,
+			"Matches", 8,
+			"Newspaper", 10,
+			"Notebook", 10,
+			"Paperclip", 10,
+			"PaperclipBox", 1,
+			"Pen", 8,
+			"Pencil", 10,
+			"Perfume", 1,
+			"PillsVitamins", 1,
+			"Radio.CDplayer", 1,
+			"Radio.RadioBlack", 2,
+			"Radio.RadioRed", 1,
+			"RedPen", 8,
+			"RubberBand", 6,
+			"Scissors", 2,
+			"Scotchtape", 4,
+			"SheetPaper2", 20,
+			"SheetPaper2", 10,
+			"Stapler", 4,
+			"Staples", 4,
+			"Toothbrush", 1,
+			"WhiskeyFull", 0.1,
+			"BrazilianFood.CoroteFull", 0.1,
+		}
+	}
+
+	ProceduralDistributions.list.OfficeDeskHome = {
+		rolls = 4,
+		items = {
+			"BluePen", 8,
+			"Briefcase", 0.5,
+			"CardDeck", 1,
+			"Cigarettes", 8,
+			"Cologne", 1,
+			"Comb", 2,
+			"Disc_Retail", 2,
+			"Eraser", 8,
+			"Frame", 4,
+			"Glue", 2,
+			"HolePuncher", 4,
+			"Lighter", 4,
+			"Lipstick", 1,
+			"Magazine", 4,
+			"MagazineCrossword1", 2,
+			"MagazineCrossword2", 2,
+			"MagazineCrossword3", 2,
+			"MagazineWordsearch1", 2,
+			"MagazineWordsearch2", 2,
+			"MagazineWordsearch3", 2,
+			"MakeupEyeshadow", 1,
+			"MakeupFoundation", 1,
+			"Matches", 8,
+			"Newspaper", 10,
+			"Notebook", 10,
+			"Paperclip", 10,
+			"PaperclipBox", 1,
+			"Pen", 8,
+			"Pencil", 10,
+			"Perfume", 1,
+			"Pills", 0.5,
+			"PillsVitamins", 1,
+			"Pistol", 0.05,
+			"Pistol2", 0.01,
+			"Pistol3", 0.005,
+			"PistolCase1", 0.01,
+			"PistolCase2", 0.005,
+			"PistolCase3", 0.001,
+			"Radio.CDplayer", 1,
+			"RedPen", 8,
+			"Revolver", 0.01,
+			"RevolverCase1", 0.01,
+			"RevolverCase2", 0.005,
+			"RevolverCase3", 0.001,
+			"Revolver_Long", 0.005,
+			"Revolver_Short", 0.05,
+			"RubberBand", 6,
+			"Scissors", 2,
+			"Scotchtape", 4,
+			"SheetPaper2", 20,
+			"SheetPaper2", 10,
+			"Stapler", 4,
+			"Staples", 4,
+			"Toothbrush", 1,
+			"WhiskeyFull", 0.5,
+			"BrazilianFood.CoroteFull", 0.5,
+		}
+	}
+
+	ProceduralDistributions.list.PlankStashGun = {
+		rolls = 4,
+		items = {
+			"Cigarettes", 8,
+			"Money", 20,
+			"Money", 10,
+			"Pistol", 8,
+			"Pistol2", 6,
+			"Pistol3", 4,
+			"Revolver", 6,
+			"Revolver_Long", 4,
+			"Revolver_Short", 8,
+			"WhiskeyFull", 2,
+			"BrazilianFood.CoroteFull", 2,
+		}
+	}
+
+	ProceduralDistributions.list.PlankStashMagazine = {
+		rolls = 4,
+		items = {
+			"Cigarettes", 8,
+			"HottieZ", 20,
+			"HottieZ", 20,
+			"HottieZ", 10,
+			"HottieZ", 10,
+			"Magazine", 20,
+			"Magazine", 20,
+			"Magazine", 10,
+			"Magazine", 10,
+			"Tissue", 10,
+			"WhiskeyFull", 2,
+			"BrazilianFood.CoroteFull", 2,
+		},
+		junk = {	
+			rolls = 1,
+			items = {
+				"HottieZ", 100,
+				"Tissue", 100,
+			}
+		}
+
+	}
+
+	ProceduralDistributions.list.PlankStashMoney = {
+		rolls = 4,
+		items = {
+			"Cigarettes", 8,
+			"Money", 100,
+			"Money", 100,
+			"Money", 100,
+			"Money", 100,
+			"Money", 100,
+			"Money", 100,
+			"Wallet", 10,
+			"Wallet2", 10,
+			"Wallet3", 10,
+			"Wallet4", 10,
+			"WhiskeyFull", 2,
+			"BrazilianFood.CoroteFull", 2,
+		}
+	}
+
+	ProceduralDistributions.list.PoliceDesk = {
+		rolls = 4,
+		items = {
+			"BluePen", 8,
+			"CardDeck", 1,
+			"Cigarettes", 8,
+			"Cologne", 1,
+			"Comb", 2,
+			"Disc_Retail", 2,
+			"Eraser", 8,
+			"Glasses_Aviators", 2,
+			"Glue", 2,
+			"HolsterDouble", 1,
+			"HolsterSimple", 4,
+			"Lighter", 4,
+			"Lipstick", 1,
+			"Magazine", 4,
+			"MagazineCrossword1", 2,
+			"MagazineCrossword2", 2,
+			"MagazineCrossword3", 2,
+			"MagazineWordsearch1", 2,
+			"MagazineWordsearch2", 2,
+			"MagazineWordsearch3", 2,
+			"MakeupEyeshadow", 1,
+			"MakeupFoundation", 1,
+			"Matches", 8,
+			"Newspaper", 4,
+			"Nightstick", 2,
+			"Notebook", 2,
+			"Paperclip", 4,
+			"PaperclipBox", 1,
+			"Pen", 8,
+			"Pencil", 10,
+			"Perfume", 1,
+			"PillsVitamins", 1,
+			"Pistol", 0.1,
+			"Radio.CDplayer", 1,
+			"Radio.WalkieTalkie4", 1,
+			"RedPen", 8,
+			"RubberBand", 6,
+			"Scissors", 2,
+			"Scotchtape", 4,
+			"SheetPaper2", 10,
+			"SheetPaper2", 10,
+			"Toothbrush", 1,
+			"WhiskeyFull", 0.1,
+			"BrazilianFood.CoroteFull", 0.1,
+		}
+	}
+
+	ProceduralDistributions.list.SafehouseMedical = {
+		rolls = 4,
+		items = {
+			"AlcoholWipes", 20,
+			"AlcoholWipes", 10,
+			"Antibiotics", 4,
+			"Bandage", 10,
+			"Disinfectant", 8,
+			"FirstAidKit", 2,
+			"Gloves_Surgical", 10,
+			"Hat_SurgicalMask_Blue", 10,
+			"Pills", 20,
+			"Pills", 10,
+			"PillsAntiDep", 10,
+			"PillsBeta", 10,
+			"PillsSleepingTablets", 10,
+			"RippedSheets", 20,
+			"RippedSheets", 10,
+			"Scalpel", 10,
+			"Scissors", 10,
+			"SutureNeedle", 10,
+			"SutureNeedleHolder", 10,
+			"Tweezers", 10,
+			"WhiskeyFull", 10,
+			"BrazilianFood.CoroteFull", 10,
+		}
+	}
+
+	ProceduralDistributions.list.StoreShelfWhiskey = {
+		rolls = 4,
+		items = {
+			"WhiskeyFull", 50,
+			"WhiskeyFull", 20,
+			"WhiskeyFull", 20,
+			"WhiskeyFull", 10,
+			"WhiskeyFull", 10,
+			"BrazilianFood.CoroteFull", 50,
+			"BrazilianFood.CoroteFull", 20,
+			"BrazilianFood.CoroteFull", 20,
+			"BrazilianFood.CoroteFull", 10,
+			"BrazilianFood.CoroteFull", 10,
+		}
+	}
+
+	ProceduralDistributions.list.WhiskeyBottlingFull = {
+		rolls = 4,
+		items = {
+			"WhiskeyFull", 50,
+			"WhiskeyFull", 20,
+			"WhiskeyFull", 20,
+			"WhiskeyFull", 10,
+			"WhiskeyFull", 10,
+			"BrazilianFood.CoroteFull", 50,
+			"BrazilianFood.CoroteFull", 20,
+			"BrazilianFood.CoroteFull", 20,
+			"BrazilianFood.CoroteFull", 10,
+			"BrazilianFood.CoroteFull", 10,
+		}
+	}
+
+	ProceduralDistributions.list.CrateChocolate = {
+		rolls = 4,
+		items = {
+			"Chocolate", 50,
+			"Chocolate", 20,
+			"Chocolate", 20,
+			"Chocolate", 10,
+			"Chocolate", 10,
+			"BrazilianFood.Bis", 50,
+			"BrazilianFood.Bis", 20,
+			"BrazilianFood.Bis", 20,
+			"BrazilianFood.Bis", 10,
+			"BrazilianFood.Bis", 10,
+		}
+	}
+
+	ProceduralDistributions.list.KitchenBreakfast = {
+		rolls = 4,
+		items = {
+			"Bread", 8,
+			"CannedMilk", 4,
+			"Cereal", 10,
+			"Chocolate", 8,
+			"Coffee2", 6,
+			"Crackers", 10,
+			"DishCloth", 10,
+			"GranolaBar", 8,
+			"Honey", 6,
+			"JamFruit", 8,
+			"JamMarmalade", 2,
+			"MapleSyrup", 6,
+			"OatsRaw", 8,
+			"PancakeMix", 8,
+			"PeanutButter", 10,
+			"Sugar", 6,
+			"SugarBrown", 6,
+			"Teabag2", 6,
+			"BrazilianFood.Bis", 8,
+		},
+		junk = {	
+			rolls = 1,
+			items = {
+				"DeadMouse", 1,
+				"DeadRat", 1,
+			}
+		}
+
+	}
+
+	ProceduralDistributions.list.TheatreSnacks = {
+		rolls = 4,
+		items = {
+			"CandyPackage", 20,
+			"CandyPackage", 10,
+			"Chocolate", 8,
+			"Gum", 10,
+			"GummyBears", 10,
+			"GummyWorms", 10,
+			"JellyBeans", 10,
+			"Jujubes", 10,
+			"LicoriceBlack", 4,
+			"LicoriceRed", 10,
+			"BrazilianFood.Bis", 8,
+		}
+	}
+
 	SuburbsDistributions.all.vendingpop = {
 		rolls = 4,
 		items = {
@@ -1113,6 +2017,8 @@ local function preDistributionMerge()
 			"Pop3", 10,
 			"PopBottle", 10,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 10,
+			"BrazilianFood.Dolly", 10,
 		}
 	}
 
@@ -1139,6 +2045,7 @@ local function preDistributionMerge()
 			"SunflowerSeeds", 1,
 			"BrazilianFood.Guarana", 1,
 			"BrazilianFood.Fofura", 1,
+			"BrazilianFood.Bis", 1,
 		}
 	}
 
@@ -1274,8 +2181,13 @@ local function preDistributionMerge()
 			"Yoghurt", 1,
 			"Zucchini", 2,
 			"BrazilianFood.Guarana", 4,
+			"BrazilianFood.GuaranaJesus", 4,
 			"BrazilianFood.Fofura", 1,
 			"BrazilianFood.FarinhaTapioca", 1,
+			"BrazilianFood.Pacoquinha", 1,
+			"BrazilianFood.Dolly", 2,
+			"BrazilianFood.Yoki", 1,
+			"BrazilianFood.Bis", 1,
 		}
 	}
 
@@ -1318,7 +2230,11 @@ local function preDistributionMerge()
 			"TortillaChips", 10,
 			"TVDinner", 10,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 10,
 			"BrazilianFood.Fofura", 10,
+			"BrazilianFood.Pacoquinha", 10,
+			"BrazilianFood.Dolly", 10,
+			"BrazilianFood.Bis", 20,
 		}
 	}
 
@@ -1363,8 +2279,12 @@ local function preDistributionMerge()
 			"TortillaChips", 10,
 			"BrazilianFood.Guarana", 50,
 			"BrazilianFood.Guarana", 10,
+			"BrazilianFood.GuaranaJesus", 50,
+			"BrazilianFood.GuaranaJesus", 10,
 			"BrazilianFood.Fofura", 50,
 			"BrazilianFood.Fofura", 10,
+			"BrazilianFood.Dolly", 50,
+			"BrazilianFood.Dolly", 10,
 		}
 	}
 
@@ -1426,6 +2346,7 @@ local function preDistributionMerge()
 			"Vest_DefaultTEXTURE_TINT", 2,
 			"WaterBottleFull", 1,
 			"BrazilianFood.Fofura", 1,
+			"BrazilianFood.Bis", 1,
 		}
 	}
 
@@ -1451,6 +2372,7 @@ local function preDistributionMerge()
 			"Vest_DefaultTEXTURE_TINT", 2,
 			"WaterBottleFull", 1,
 			"BrazilianFood.Fofura", 1,
+			"BrazilianFood.Bis", 1,
 		}
 	}
 
@@ -1484,6 +2406,10 @@ local function preDistributionMerge()
 			"SunflowerSeeds", 10,
 			"TortillaChips", 10,
 			"BrazilianFood.Fofura", 10,
+			"BrazilianFood.PipocaDoce", 10,
+			"BrazilianFood.BolachaDoce", 10,
+			"BrazilianFood.Bis", 20,
+			"BrazilianFood.Bis", 10,
 		}
 	}
 
@@ -1508,6 +2434,7 @@ local function preDistributionMerge()
 			"Vest_DefaultTEXTURE_TINT", 2,
 			"WaterBottleFull", 1,
 			"BrazilianFood.Fofura", 1,
+			"BrazilianFood.Bis", 1,
 		}
 	}
 
@@ -1577,6 +2504,7 @@ local function preDistributionMerge()
 			"SunflowerSeeds", 8,
 			"WaterBottleFull", 10,
 			"BrazilianFood.Fofura", 10,
+			"BrazilianFood.Bis", 8,
 		}
 	}
 
@@ -1603,6 +2531,257 @@ local function preDistributionMerge()
 			"Yeast", 20,
 			"BrazilianFood.FarinhaTapioca", 100,
 			"BrazilianFood.FarinhaTapioca", 20,
+		}
+	}
+
+	SuburbsDistributions.GroceryBag2 = {
+		rolls = 1,
+		items = {
+			"Apple", 4,
+			"Avocado", 2,
+			"Banana", 4,
+			"BellPepper", 2,
+			"Broccoli", 4,
+			"CannedCarrots2", 4,
+			"CannedCorn", 4,
+			"CannedFruitCocktail", 4,
+			"CannedPeaches", 4,
+			"CannedPeas", 4,
+			"CannedPineapple", 4,
+			"CannedPotato2", 4,
+			"CannedTomato2", 4,
+			"Carrots", 4,
+			"Cherry", 4,
+			"Corn", 4,
+			"DriedBlackBeans", 4,
+			"DriedChickpeas", 4,
+			"DriedKidneyBeans", 4,
+			"DriedLentils", 4,
+			"DriedSplitPeas", 4,
+			"DriedWhiteBeans", 4,
+			"Eggplant", 4,
+			"farming.Cabbage", 4,
+			"farming.RedRadish", 4,
+			"farming.Strewberrie", 4,
+			"farming.Tomato", 4,
+			"Grapefruit", 4,
+			"Grapes", 4,
+			"Leek", 4,
+			"Lemon", 4,
+			"Lettuce", 4,
+			"Lime", 4,
+			"OatsRaw", 2,
+			"OilOlive", 2,
+			"OilVegetable", 2,
+			"Onion", 4,
+			"Orange", 4,
+			"Pasta", 2,
+			"Peach", 4,
+			"Pear", 4,
+			"PepperJalapeno", 2,
+			"Pickles", 6,
+			"Pineapple", 2,
+			"Rice", 2,
+			"WaterBottleFull", 2,
+			"Yoghurt", 2,
+			"Zucchini", 4,
+			"BrazilianFood.Yoki", 2,
+		}
+	}
+
+	SuburbsDistributions.all.Outfit_Bandit = {
+		rolls = 1,
+		items = {
+			"Cigarettes", 8,
+			"HuntingKnife", 6,
+			"WhiskeyFull", 0.1,
+			"BrazilianFood.CoroteFull", 0.1,
+		}
+	}
+
+	SuburbsDistributions.all.Outfit_Biker = {
+		rolls = 1,
+		items = {
+			"BeerCan", 10,
+			"Cigarettes", 8,
+			"HuntingKnife", 8,
+			"Pistol", 8,
+			"Revolver_Short", 6,
+			"WhiskeyFull", 0.1,
+			"BrazilianFood.CoroteFull", 0.1,
+		}
+	}
+
+	SuburbsDistributions.all.Outfit_Hobbo = {
+		rolls = 1,
+		items = {
+			"camping.CampingTentKit", 0.1,
+			"Cigarettes", 8,
+			"HuntingKnife", 6,
+			"MugWhite", 4,
+			"ToiletPaper", 10,
+			"WhiskeyEmpty", 10,
+			"WhiskeyFull", 0.1,
+			"BrazilianFood.CoroteFull", 0.1,
+		}
+	}
+
+	SuburbsDistributions.all.Outfit_Punk = {
+		rolls = 1,
+		items = {
+			"BeerBottle", 10,
+			"BeerCan", 10,
+			"Cigarettes", 8,
+			"HuntingKnife", 8,
+			"WhiskeyFull", 10,
+			"BrazilianFood.CoroteFull", 10,
+		}
+	}
+
+	SuburbsDistributions.all.Outfit_Raider = {
+		rolls = 1,
+		items = {
+			"Cigarettes", 8,
+			"HuntingKnife", 6,
+			"WhiskeyFull", 0.1,
+			"BrazilianFood.CoroteFull", 0.1,
+		}
+	}
+
+	SuburbsDistributions.all.Outfit_Redneck = {
+		rolls = 1,
+		items = {
+			"BeefJerky", 8,
+			"BeerCan", 10,
+			"Cigarettes", 8,
+			"DehydratedMeatStick", 10,
+			"HottieZ", 0.1,
+			"HuntingKnife", 6,
+			"WhiskeyFull", 0.1,
+			"BrazilianFood.CoroteFull", 0.1,
+		}
+	}
+
+	SuburbsDistributions.all.Outfit_Teacher = {
+		rolls = 1,
+		items = {
+			"BluePen", 8,
+			"Notebook", 10,
+			"Pencil", 10,
+			"RedPen", 8,
+			"WhiskeyFull", 0.1,
+			"BrazilianFood.CoroteFull", 0.1,
+		}
+	}
+
+	SuburbsDistributions.all.Outfit_Varsity = {
+		rolls = 1,
+		items = {
+			"Cigarettes", 8,
+			"ComicBook", 4,
+			"Disc_Retail", 4,
+			"Earbuds", 2,
+			"Headphones", 1,
+			"HottieZ", 0.1,
+			"Radio.CDPlayer", 2,
+			"WhiskeyFull", 0.1,
+			"BrazilianFood.CoroteFull", 0.1,
+		}
+	}
+
+	SuburbsDistributions.Lunchbag = {
+		rolls = 1,
+		items = {
+			"Apple", 20,
+			"Banana", 20,
+			"BeefJerky", 10,
+			"Burrito", 10,
+			"CheeseSandwich", 20,
+			"Chocolate", 10,
+			"CinnamonRoll", 10,
+			"CookieChocolateChip", 10,
+			"CookieJelly", 10,
+			"CookiesChocolate", 10,
+			"CookiesOatmeal", 10,
+			"CookiesShortbread", 10,
+			"DehydratedMeatStick", 10,
+			"DoughnutChocolate", 10,
+			"DoughnutFrosted", 10,
+			"DoughnutJelly", 10,
+			"DoughnutPlain", 10,
+			"GranolaBar", 20,
+			"MuffinFruit", 20,
+			"MuffinGeneric", 20,
+			"Orange", 20,
+			"Painauchocolat", 10,
+			"PeanutButterSandwich", 20,
+			"Pretzel", 10,
+			"Yoghurt", 20,
+			"BrazilianFood.Bis", 10,
+		}
+	}
+
+	SuburbsDistributions.Lunchbox = {
+		rolls = 1,
+		items = {
+			"Apple", 20,
+			"Banana", 20,
+			"BeefJerky", 10,
+			"Burrito", 10,
+			"CheeseSandwich", 20,
+			"Chocolate", 10,
+			"CinnamonRoll", 10,
+			"CookieChocolateChip", 10,
+			"CookieJelly", 10,
+			"CookiesChocolate", 10,
+			"CookiesOatmeal", 10,
+			"CookiesShortbread", 10,
+			"DehydratedMeatStick", 10,
+			"DoughnutChocolate", 10,
+			"DoughnutFrosted", 10,
+			"DoughnutJelly", 10,
+			"DoughnutPlain", 10,
+			"GranolaBar", 20,
+			"MuffinFruit", 20,
+			"MuffinGeneric", 20,
+			"Orange", 20,
+			"Painauchocolat", 10,
+			"PeanutButterSandwich", 20,
+			"Pretzel", 10,
+			"Yoghurt", 20,
+			"BrazilianFood.Bis", 10,
+		}
+	}
+
+	SuburbsDistributions.Lunchbox2 = {
+		rolls = 1,
+		items = {
+			"Apple", 20,
+			"Banana", 20,
+			"BeefJerky", 10,
+			"Burrito", 10,
+			"CheeseSandwich", 20,
+			"Chocolate", 10,
+			"CinnamonRoll", 10,
+			"CookieChocolateChip", 10,
+			"CookieJelly", 10,
+			"CookiesChocolate", 10,
+			"CookiesOatmeal", 10,
+			"CookiesShortbread", 10,
+			"DehydratedMeatStick", 10,
+			"DoughnutChocolate", 10,
+			"DoughnutFrosted", 10,
+			"DoughnutJelly", 10,
+			"DoughnutPlain", 10,
+			"GranolaBar", 20,
+			"MuffinFruit", 20,
+			"MuffinGeneric", 20,
+			"Orange", 20,
+			"Painauchocolat", 10,
+			"PeanutButterSandwich", 20,
+			"Pretzel", 10,
+			"Yoghurt", 20,
+			"BrazilianFood.Bis", 10,
 		}
 	}
 

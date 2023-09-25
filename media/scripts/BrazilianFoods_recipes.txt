@@ -10,10 +10,82 @@ module BrazilianFood
         keep Spatula,
         destroy Pan,
 		BrazilianFood.FarinhaTapioca=1,
-
-		Result 		        : PanwithUncookedTapioca,
+		Result 		        : BrazilianFood.PanwithUncookedTapioca,
 		Time 		        : 20,
 		Category 		    : Cooking,
 		OnGiveXP 		    : Recipe.OnGiveXP.Cooking1,
 	}
+
+	recipe Remover Tapioca
+	{
+        keep Spatula,
+		destroy BrazilianFood.PanwithTapioca,
+
+		Result 		        : BrazilianFood.Tapioca,
+		Time 		        : 10,
+		Category 		    : Cooking,
+		OnGiveXP 		    : Recipe.OnGiveXP.Cooking1,
+		OnCreate			: Recipe.OnCreate.GetTapioca,
+	}
+
+	recipe Fazer Bandeja de Pao de Queijo
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+	 	destroy BakingTray,
+		BrazilianFood.PaoDeQueijoCongelado=1,
+
+		Result			: BrazilianFood.DoughOfPaoDeQueijo,
+		Category		: Cooking,
+		Time			: 20,
+    }
+
+	recipe Fazer Massa de Bolinho Caipira
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+	   keep Bowl,
+       keep RollingPin,
+       Water=1,
+       Cornflour=1,
+       
+       Result:BrazilianFood.MassaBolinhoCaipira,
+       Time:50.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking4,
+    }
+
+	recipe Fazer Bolinho Caipira Carne
+    {
+		BrazilianFood.MassaBolinhoCaipira=1,
+		MincedMeat=1,
+
+		Result			: BrazilianFood.BolinhoCaipira=10,
+		Category		: Cooking,
+		Time			: 20,
+    }
+
+	recipe Fazer Massa de Coxinha
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+	   keep Bowl,
+       keep RollingPin,
+       Water=1,
+       Flour=1,
+	   Milk=1,
+	   Butter=1,
+       
+       Result:BrazilianFood.MassaCoxinha,
+       Time:50.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking4,
+    }
+
+	recipe Fazer Coxinha
+    {
+		BrazilianFood.MassaCoxinha=1,
+		Chicken=1,
+
+		Result			: BrazilianFood.CoxinhaCrua=10,
+		Category		: Cooking,
+		Time			: 20,
+    }
 }

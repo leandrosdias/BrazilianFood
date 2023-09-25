@@ -1,12 +1,40 @@
-module BrazilianFood
+module Base
 {
-   evolvedrecipe TapiocaSalgada
+   evolvedrecipe BrazilianFood.TapiocaSalgadaBase
 	{
-		BaseItem:BrazilianFood.PanwithTapioca,
+		BaseItem:Tapioca,
 		MaxItems:5,
-		Cookable:true,
 		ResultItem:BrazilianFood.TapiocaSalgada,
-		Name:Tapioca Salgada,
+		Name:Preparar Tapioca Salgada,
 		CanAddSpicesEmpty:True,
+	}
+
+	evolvedrecipe BrazilianFood.TapiocaDoceBase
+	{
+		BaseItem:Tapioca,
+		MaxItems:5,
+		ResultItem:BrazilianFood.TapiocaDoce,
+		Name:Preparar Tapioca Doce,
+		CanAddSpicesEmpty:True,
+	}
+
+	evolvedrecipe BrazilianFood.FeijaoPreto
+	{
+		BaseItem:WaterPot,
+		MaxItems:6,
+		ResultItem:BrazilianFood.PotOfFeijaoPreto,
+		Cookable:true,
+		Name:Preparar Feijão Preto,
+		CanAddSpicesEmpty:true,
+	}
+
+	evolvedrecipe BrazilianFood.Feijoada
+	{
+		BaseItem:PotOfFeijaoPretoCozido,
+		MaxItems:6,
+		ResultItem:BrazilianFood.Feijoada,
+		Cookable:true,
+		Name:Preparar Feijoada,
+		CanAddSpicesEmpty:true,
 	}
 }
