@@ -137,4 +137,16 @@ module Base
 		texture = WorldItems/Coxinha_Ground,
 		scale = 0.08,
 	}
+	model BRFBrigadeiro_Ground
+	{
+		mesh = Brigadeiro,
+		texture = WorldItems/Brigadeiro_Ground,
+		scale = 0.01,
+	}
+	model BRFMassaBrigadeiro_Ground
+	{
+		mesh = WorldItems/BreadDough,
+		texture = WorldItems/MassaBrigadeiro_Ground,
+		scale = 0.01,
+	}
 }

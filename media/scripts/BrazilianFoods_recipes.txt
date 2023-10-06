@@ -88,4 +88,29 @@ module BrazilianFood
 		Category		: Cooking,
 		Time			: 20,
     }
+
+	recipe Fazer Massa de Brigadeiro
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+	   keep Bowl,
+	   Butter=1,
+	   CannedMilkOpen=1,
+	   Chocolate=1,
+       
+       Result:BrazilianFood.MassaBrigadeiro,
+       Time:20,
+       Category:Cooking,
+       OnGiveXP:Base.Recipe.OnGiveXP.Cooking4,
+    }
+
+	recipe Fazer Brigadeiro
+    {
+	   keep [Recipe.GetItemTypes.Spoon],
+	   BrazilianFood.MassaBrigadeiro=1,
+	   
+       Result:BrazilianFood.Brigadeiro=12,
+       Time:30,
+       Category:Cooking,
+    }
+	
 }
