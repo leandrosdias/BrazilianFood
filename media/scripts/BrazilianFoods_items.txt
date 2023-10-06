@@ -539,7 +539,7 @@ module BrazilianFood {
 		DisplayName 			        = Coxinha,
 		DisplayCategory 		        = Food,
 		Type 					        = Food,
-		Weight 					        = 0.3,
+		Weight 					        = 0.2,
 		Icon 					        = coxinha,
 		UnhappyChange                   = 30,
 		ThirstChange                    = 20,
@@ -564,7 +564,7 @@ module BrazilianFood {
 		DisplayName 			        = Coxinha,
 		DisplayCategory 		        = Food,
 		Type 					        = Food,
-		Weight 					        = 0.3,
+		Weight 					        = 0.2,
 		Icon 					        = coxinha,
 		UnhappyChange                   = -30,
 		ThirstChange                    = 5,
@@ -579,4 +579,47 @@ module BrazilianFood {
 		StaticModel 		            = BRFCoxinha,
 	}
 	
+	item MassaBrigadeiro
+	{
+		DisplayName 			        = Massa de Brigadeiro,
+		DisplayCategory 		        = Food,
+		Type 					        = Food,
+		Weight 					        = 0.2,
+		Icon 					        = Dough,
+		UnhappyChange                   = -5,
+		ThirstChange                    = 60,
+		DaysFresh 				        = 3,
+		DaysTotallyRotten 		        = 6,
+		IsCookable                      = true,
+		RemoveNegativeEffectOnCooked 	= true,
+		MinutesToCook                   = 10,
+		MinutesToBurn                   = 15,
+		HungerChange			        = -15,
+		Calories 				        = 110,
+		Carbohydrates 			        = 10,
+		Lipids 					        = 5.33,
+		Proteins 				        = 7,
+		WorldStaticModel 		        = BRFMassaBrigadeiro_Ground,
+	}
+
+	item Brigadeiro
+	{
+		DisplayName = Brigadeiro,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = brigadeiro,
+		FoodType = NoExplicit,
+		Packaged = TRUE,
+		HungerChange = -5,
+		UnhappyChange = -20,
+		ThirstChange        = 20,
+		Calories = 80,
+		Carbohydrates = 10,
+		Lipids = 6,
+		Proteins = 1,
+		WorldStaticModel = BRFBrigadeiro_Ground,
+		StaticModel      = BRFBrigadeiro_Ground,
+	}
+
 }

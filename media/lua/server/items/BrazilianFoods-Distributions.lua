@@ -32,6 +32,10 @@ local function preDistributionMerge()
 			"BrazilianFood.GuaranaJesus", 4,
 			"BrazilianFood.Dolly", 4,
 			"BrazilianFood.PaoDeQueijoCongelado", 2,
+			"BrazilianFood.BolinhoCaipira", 1,
+			"BrazilianFood.CoxinhaCrua", 4,
+			"BrazilianFood.MassaBrigadeiro", 2,
+			"BrazilianFood.Brigadeiro", 1,
 		}
 	}
 
@@ -177,6 +181,8 @@ local function preDistributionMerge()
 			"BrazilianFood.GuaranaJesus", 4,
 			"BrazilianFood.Dolly", 4,
 			"BrazilianFood.PaoDeQueijoCongelado", 3,
+			"BrazilianFood.BolinhoCaipira", 2,
+			"BrazilianFood.CoxinhaCrua", 6,
 		}
 	}
 
@@ -210,6 +216,7 @@ local function preDistributionMerge()
 			"BrazilianFood.GuaranaJesus", 4,
 			"BrazilianFood.Dolly", 4,
 			"BrazilianFood.PaoDeQueijoCongelado", 5,
+			"BrazilianFood.CoxinhaCrua", 10,
 		}
 	}
 
@@ -285,6 +292,8 @@ local function preDistributionMerge()
 			"BrazilianFood.GuaranaJesus", 2,
 			"BrazilianFood.Dolly", 2,
 			"BrazilianFood.PaoDeQueijoCongelado", 6,
+			"BrazilianFood.BolinhoCaipira", 3,
+			"BrazilianFood.CoxinhaCrua", 12,
 		}
 	}
 
@@ -519,6 +528,11 @@ local function preDistributionMerge()
 			"Shrimp", 2,
 			"Steak", 6,
 			"BrazilianFood.Acai", 10,
+			"BrazilianFood.PaoDeQueijoCongelado", 3,
+			"BrazilianFood.BolinhoCaipira", 5,
+			"BrazilianFood.CoxinhaCrua", 6,
+			"BrazilianFood.MassaBrigadeiro", 1,
+			"BrazilianFood.Brigadeiro", 8,
 		}
 	}
 
@@ -1398,6 +1412,10 @@ local function preDistributionMerge()
 			"farming.Tomato", 2,
 			"BrazilianFood.Dolly", 2,
 			"BrazilianFood.PaoDeQueijoCongelado", 2,
+			"BrazilianFood.BolinhoCaipira", 2,
+			"BrazilianFood.CoxinhaCrua", 4,
+			"BrazilianFood.MassaBrigadeiro", 2,
+			"BrazilianFood.Brigadeiro", 1,
 		}
 	}
 
