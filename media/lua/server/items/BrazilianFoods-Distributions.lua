@@ -1,2808 +1,951 @@
-local function preDistributionMerge()
-
-	ProceduralDistributions.list.BandPracticeFridge = {
-		rolls = 4,
-		items = {
-			"BeerBottle", 20,
-			"BeerBottle", 10,
-			"BeerCan", 20,
-			"BeerCan", 10,
-			"Burger", 8,
-			"Burrito", 8,
-			"CheeseSandwich", 4,
-			"ChickenFried", 4,
-			"Corndog", 4,
-			"farming.MayonnaiseFull", 1,
-			"FriedOnionRings", 8,
-			"Fries", 8,
-			"Gravy", 4,
-			"Hotdog", 4,
-			"Hotsauce", 1,
-			"Ketchup", 1,
-			"MuffinFruit", 4,
-			"MuffinGeneric", 4,
-			"Mustard", 1,
-			"PeanutButterSandwich", 4,
-			"Pop", 4,
-			"Pop2", 4,
-			"Pop3", 4,
-			"PopBottle", 4,
-			"Taco", 4,
-			"BrazilianFood.Guarana", 4,
-			"BrazilianFood.GuaranaJesus", 4,
-			"BrazilianFood.Dolly", 4,
-			"BrazilianFood.PaoDeQueijoCongelado", 2,
-			"BrazilianFood.BolinhoCaipira", 1,
-			"BrazilianFood.CoxinhaCrua", 4,
-			"BrazilianFood.MassaBrigadeiro", 2,
-			"BrazilianFood.Brigadeiro", 1,
-		}
-	}
-
-	ProceduralDistributions.list.BarCounterMisc = {
-		rolls = 4,
-		items = {
-			"CardDeck", 6,
-			"Cigarettes", 20,
-			"Cigarettes", 10,
-			"Corkscrew", 10,
-			"Crisps", 10,
-			"Dice", 6,
-			"Lighter", 10,
-			"Matches", 10,
-			"Peanuts", 10,
-			"Pickles", 6,
-			"Pop", 10,
-			"Pop2", 10,
-			"Pop3", 10,
-			"PopBottle", 6,
-			"TortillaChips", 10,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 10,
-			"BrazilianFood.Fofura", 10,
-			"BrazilianFood.Dolly", 6,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"DishCloth", 20,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.CafeteriaDrinks = {
-		rolls = 4,
-		items = {
-			"JuiceBox", 20,
-			"JuiceBox", 10,
-			"Pop", 8,
-			"Pop2", 8,
-			"Pop3", 8,
-			"PopBottle", 8,
-			"WaterBottleFull", 8,
-			"WaterBottleFull", 8,
-			"BrazilianFood.Guarana", 8,
-			"BrazilianFood.GuaranaJesus", 8,
-			"BrazilianFood.Dolly", 8,
-		}
-	}
-
-	ProceduralDistributions.list.ClassroomDesk = {
-		rolls = 4,
-		items = {
-			"BluePen", 8,
-			"Book", 10,
-			"Bracelet_LeftFriendshipTINT", 1,
-			"Chocolate", 1,
-			"ComicBook", 2,
-			"Crisps", 1,
-			"Cube", 4,
-			"Eraser", 8,
-			"Glue", 2,
-			"Lollipop", 1,
-			"Magazine", 2,
-			"MagazineCrossword1", 2,
-			"MagazineCrossword2", 2,
-			"MagazineCrossword3", 2,
-			"MagazineWordsearch1", 2,
-			"MagazineWordsearch2", 2,
-			"MagazineWordsearch3", 2,
-			"Notebook", 10,
-			"Pen", 8,
-			"Pencil", 10,
-			"Pop", 1,
-			"Radio.CDplayer", 1,
-			"RedPen", 8,
-			"Scissors", 2,
-			"Scotchtape", 4,
-			"SheetPaper2", 20,
-			"SheetPaper2", 10,
-			"VideoGame", 1,
-			"Yoyo", 4,
-			"BrazilianFood.Guarana", 1,
-			"BrazilianFood.Fofura", 1,
-			"BrazilianFood.Bis", 1,
-		}
-	}
-
-	ProceduralDistributions.list.CrateSodaCans = {
-		rolls = 4,
-		items = {
-			"Pop", 20,
-			"Pop", 10,
-			"Pop2", 20,
-			"Pop2", 10,
-			"Pop3", 20,
-			"Pop3", 10,
-			"BrazilianFood.Guarana", 20,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 20,
-			"BrazilianFood.GuaranaJesus", 10,
-		}
-	}
-
-	ProceduralDistributions.list.FridgeBreakRoom = {
-		rolls = 4,
-		items = {
-			"Apple", 8,
-			"Banana", 8,
-			"Burger", 4,
-			"CakeSlice", 4,
-			"farming.MayonnaiseFull", 1,
-			"farming.RemouladeFull", 1,
-			"Grapefruit", 8,
-			"Hotdog", 4,
-			"Ketchup", 1,
-			"Lunchbag", 10,
-			"Lunchbox", 10,
-			"Lunchbox2", 0.001,
-			"Mustard", 1,
-			"Orange", 8,
-			"Paperbag_Jays", 0.5,
-			"Paperbag_Spiffos", 0.5,
-			"Peach", 8,
-			"Pear", 8,
-			"Pie", 4,
-			"PieApple", 4,
-			"PieBlueberry", 4,
-			"PieKeyLime", 4,
-			"PieLemonMeringue", 4,
-			"PiePumpkin", 4,
-			"Pop", 4,
-			"Pop2", 4,
-			"Pop3", 4,
-			"PopBottle", 4,
-			"Processedcheese", 8,
-			"WaterBottleFull", 4,
-			"Yoghurt", 4,
-			"Yoghurt", 4,
-			"BrazilianFood.Guarana", 4,
-			"BrazilianFood.GuaranaJesus", 4,
-			"BrazilianFood.Dolly", 4,
-			"BrazilianFood.PaoDeQueijoCongelado", 3,
-			"BrazilianFood.BolinhoCaipira", 2,
-			"BrazilianFood.CoxinhaCrua", 6,
-		}
-	}
-
-	ProceduralDistributions.list.FridgeOffice = {
-		rolls = 4,
-		items = {
-			"Apple", 8,
-			"Banana", 8,
-			"Burger", 4,
-			"CakeSlice", 4,
-			"Hotdog", 4,
-			"Lunchbag", 10,
-			"Lunchbox", 10,
-			"Lunchbox2", 0.001,
-			"Orange", 8,
-			"Peach", 8,
-			"Pie", 4,
-			"PieApple", 4,
-			"PieBlueberry", 4,
-			"PieKeyLime", 4,
-			"PieLemonMeringue", 4,
-			"PiePumpkin", 4,
-			"Pop", 4,
-			"Pop2", 4,
-			"Pop3", 4,
-			"Pizza", 4,
-			"PopBottle", 4,
-			"WaterBottleFull", 4,
-			"Yoghurt", 4,
-			"BrazilianFood.Guarana", 4,
-			"BrazilianFood.GuaranaJesus", 4,
-			"BrazilianFood.Dolly", 4,
-			"BrazilianFood.PaoDeQueijoCongelado", 5,
-			"BrazilianFood.CoxinhaCrua", 10,
-		}
-	}
-
-	ProceduralDistributions.list.FridgeSoda = {
-		rolls = 4,
-		items = {
-			"Pop", 20,
-			"Pop", 10,
-			"Pop2", 20,
-			"Pop2", 10,
-			"Pop3", 20,
-			"Pop3", 10,
-			"PopBottle", 20,
-			"PopBottle", 10,
-			"BrazilianFood.Guarana", 20,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 20,
-			"BrazilianFood.GuaranaJesus", 10,
-			"BrazilianFood.Dolly", 20,
-			"BrazilianFood.Dolly", 10,
-		}
-	}
-
-	ProceduralDistributions.list.FridgeTrailerPark = {
-		rolls = 4,
-		items = {
-			"Apple", 2,
-			"Baloney", 1,
-			"Banana", 2,
-			"BeerCan", 4,
-			"Butter", 4,
-			"Carrots", 2,
-			"Chicken", 0.5,
-			"Corn", 2,
-			"EggCarton", 0.8,
-			"farming.Bacon", 1,
-			"farming.MayonnaiseFull", 0.20,
-			"farming.Strewberrie", 2,
-			"farming.Tomato", 2,
-			"Grapefruit", 2,
-			"Grapes", 2,
-			"Ham", 1,
-			"Hotsauce", 0.20,
-			"JuiceBox", 1,
-			"Ketchup", 0.20,
-			"Lard", 2,
-			"Lemon", 2,
-			"Lime", 2,
-			"MapleSyrup", 0.20,
-			"Margarine", 4,
-			"MeatPatty", 0.8,
-			"Milk", 4,
-			"MincedMeat", 0.8,
-			"Mustard", 0.20,
-			"Onion", 2,
-			"Orange", 2,
-			"Paperbag_Jays", 0.2,
-			"Paperbag_Spiffos", 0.2,
-			"Pickles", 6,
-			"Pop", 2,
-			"Pop2", 2,
-			"Pop3", 2,
-			"PopBottle", 2,
-			"PorkChop", 1,
-			"Processedcheese", 6,
-			"Salami", 1,
-			"Sausage", 1,
-			"Soysauce", 0.1,
-			"Steak", 0.1,
-			"WaterBottleFull", 1,
-			"Yoghurt", 0.5,
-			"BrazilianFood.Guarana", 2,
-			"BrazilianFood.GuaranaJesus", 2,
-			"BrazilianFood.Dolly", 2,
-			"BrazilianFood.PaoDeQueijoCongelado", 6,
-			"BrazilianFood.BolinhoCaipira", 3,
-			"BrazilianFood.CoxinhaCrua", 12,
-		}
-	}
-
-	ProceduralDistributions.list.GasStorageCombo = {
-		rolls = 4,
-		items = {
-			"BeefJerky", 8,
-			"CandyPackage", 4,
-			"ChocoCakes", 8,
-			"Chocolate", 10,
-			"Cigarettes", 10,
-			"Cigarettes", 20,
-			"Crisps", 10,
-			"Crisps2", 10,
-			"Crisps3", 10,
-			"Crisps4", 10,
-			"DehydratedMeatStick", 10,
-			"GranolaBar", 8,
-			"Gum", 10,
-			"GummyBears", 10,
-			"GummyWorms", 10,
-			"HiHis", 8,
-			"JellyBeans", 10,
-			"Jujubes", 10,
-			"LicoriceBlack", 4,
-			"LicoriceRed", 10,
-			"Lighter", 10,
-			"Matches", 10,
-			"Peanuts", 6,
-			"Plonkies", 8,
-			"Pop", 10,
-			"Pop2", 10,
-			"Pop3", 10,
-			"PopBottle", 10,
-			"QuaggaCakes", 8,
-			"SnoGlobes", 8,
-			"SunflowerSeeds", 6,
-			"TortillaChips", 10,
-			"WaterBottleFull", 10,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 10,
-			"BrazilianFood.Fofura", 10,
-			"BrazilianFood.Dolly", 10,
-			"BrazilianFood.PipocaDoce", 8,
-			"BrazilianFood.BolachaDoce", 8,
-			"BrazilianFood.Bis", 10,
-		}
-	}
-
-	ProceduralDistributions.list.GigamartBottles = {
-		rolls = 4,
-		items = {
-			"WaterBottleFull", 20,
-			"WaterBottleFull", 10,
-			"PopBottle", 20,
-			"PopBottle", 10,
-			"Pop", 20,
-			"Pop", 10,
-			"Pop2", 20,
-			"Pop2", 10,
-			"Pop3", 20,
-			"Pop3", 10,
-			"BrazilianFood.Guarana", 20,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 20,
-			"BrazilianFood.GuaranaJesus", 10,
-			"BrazilianFood.Dolly", 20,
-			"BrazilianFood.Dolly", 10,
-		}
-	}
-
-	ProceduralDistributions.list.KitchenBottles = {
-		rolls = 4,
-		items = {
-			"BeerBottle", 1,
-			"BeerCan", 2,
-			"Corkscrew", 4,
-			"DishCloth", 10,
-			"JuiceBox", 6,
-			"PlasticCup", 10,
-			"Pop", 10,
-			"Pop2", 10,
-			"Pop3", 10,
-			"PopBottle", 8,
-			"PopBottle", 8,
-			"WaterBottleFull", 8,
-			"WaterBottleFull", 8,
-			"WhiskeyFull", 2,
-			"Wine", 1,
-			"Wine2", 1,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 10,
-			"BrazilianFood.Dolly", 8,
-			"BrazilianFood.Dolly", 8,
-			"BrazilianFood.CoroteFull", 2,
-		}
-	}
-
-	ProceduralDistributions.list.MotelFridge = {
-		rolls = 1,
-		items = {
-			"Burger", 6,
-			"Burrito", 10,
-			"Corndog", 10,
-			"Fries", 6,
-			"Hotdog", 6,
-			"MuffinFruit", 10,
-			"MuffinGeneric", 10,
-			"Pizza", 6,
-			"Pop", 6,
-			"Pop2", 6,
-			"Pop3", 6,
-			"PopBottle", 6,
-			"PopBottle", 6,
-			"WhiskeyFull", 2,
-			"BrazilianFood.Guarana", 6,
-			"BrazilianFood.GuaranaJesus", 6,
-			"BrazilianFood.Dolly", 6,
-			"BrazilianFood.Dolly", 6,
-			"BrazilianFood.CoroteFull", 2,
-		}
-	}
-
-	ProceduralDistributions.list.StoreShelfCombo = {
-		rolls = 4,
-		items = {
-			"BeefJerky", 8,
-			"CandyPackage", 4,
-			"ChocoCakes", 8,
-			"Chocolate", 10,
-			"Crisps", 10,
-			"Crisps2", 10,
-			"Crisps3", 10,
-			"Crisps4", 10,
-			"DehydratedMeatStick", 10,
-			"GranolaBar", 8,
-			"Gum", 10,
-			"GummyBears", 10,
-			"GummyWorms", 10,
-			"HiHis", 8,
-			"JellyBeans", 10,
-			"Jujubes", 10,
-			"LicoriceBlack", 4,
-			"LicoriceRed", 10,
-			"Peanuts", 6,
-			"Plonkies", 8,
-			"Pop", 10,
-			"Pop2", 10,
-			"Pop3", 10,
-			"PopBottle", 10,
-			"PopBottle", 20,
-			"QuaggaCakes", 8,
-			"SnoGlobes", 8,
-			"SunflowerSeeds", 6,
-			"TortillaChips", 10,
-			"WaterBottleFull", 10,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 10,
-			"BrazilianFood.Fofura", 10,
-			"BrazilianFood.Dolly", 10,
-			"BrazilianFood.Dolly", 20,
-			"BrazilianFood.PipocaDoce", 8,
-			"BrazilianFood.BolachaDoce", 8,
-			"BrazilianFood.Bis", 10,
-		}
-	}
-
-	ProceduralDistributions.list.StoreShelfDrinks = {
-		rolls = 4,
-		items = {
-			"Pop", 20,
-			"Pop", 10,
-			"Pop2", 20,
-			"Pop2", 10,
-			"Pop3", 20,
-			"Pop3", 10,
-			"PopBottle", 20,
-			"PopBottle", 10,
-			"WaterBottleFull", 20,
-			"WaterBottleFull", 10,
-			"BrazilianFood.Guarana", 20,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 20,
-			"BrazilianFood.GuaranaJesus", 10,
-			"BrazilianFood.Dolly", 20,
-			"BrazilianFood.Dolly", 10,
-		}
-	}
-
-	ProceduralDistributions.list.TheatreDrinks = {
-		rolls = 4,
-		items = {
-			"Pop", 20,
-			"Pop", 10,
-			"Pop2", 20,
-			"Pop2", 10,
-			"Pop3", 20,
-			"Pop3", 10,
-			"PopBottle", 20,
-			"PopBottle", 20,
-			"PopBottle", 10,
-			"PopBottle", 10,
-			"BrazilianFood.Guarana", 20,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 20,
-			"BrazilianFood.GuaranaJesus", 10,
-			"BrazilianFood.Dolly", 20,
-			"BrazilianFood.Dolly", 20,
-			"BrazilianFood.Dolly", 10,
-			"BrazilianFood.Dolly", 10,
-		}
-	}
-
-	ProceduralDistributions.list.FreezerGeneric = {
-		rolls = 4,
-		items = {
-			"Chicken", 6,
-			"CornFrozen", 10,
-			"farming.Bacon", 6,
-			"Ham", 6,
-			"Icecream", 10,
-			"IcePick", 0.1,
-			"MeatPatty", 8,
-			"MincedMeat", 8,
-			"MixedVegetables", 10,
-			"MuttonChop", 2,
-			"Oysters", 2,
-			"Peas", 10,
-			"PorkChop", 8,
-			"Salmon", 4,
-			"Sausage", 8,
-			"Shrimp", 2,
-			"Steak", 6,
-			"BrazilianFood.Acai", 10,
-			"BrazilianFood.PaoDeQueijoCongelado", 3,
-			"BrazilianFood.BolinhoCaipira", 5,
-			"BrazilianFood.CoxinhaCrua", 6,
-			"BrazilianFood.MassaBrigadeiro", 1,
-			"BrazilianFood.Brigadeiro", 8,
-		}
-	}
-
-	ProceduralDistributions.list.FreezerRich = {
-		rolls = 4,
-		items = {
-			"Chicken", 6,
-			"CornFrozen", 10,
-			"farming.Bacon", 6,
-			"Ham", 6,
-			"Icecream", 10,
-			"IcePick", 0.1,
-			"MeatPatty", 4,
-			"MincedMeat", 4,
-			"MixedVegetables", 10,
-			"MuttonChop", 8,
-			"Oysters", 8,
-			"Peas", 10,
-			"PizzaRecipe", 0.1,
-			"PizzaWhole", 0.1,
-			"PorkChop", 4,
-			"Salmon", 8,
-			"Sausage", 4,
-			"Shrimp", 8,
-			"Steak", 8,
-			"BrazilianFood.Acai", 10,
-		}
-	}
-
-	ProceduralDistributions.list.FreezerTrailerPark = {
-		rolls = 4,
-		items = {
-			"Chicken", 6,
-			"CornFrozen", 10,
-			"farming.Bacon", 6,
-			"Ham", 6,
-			"Icecream", 10,
-			"IcePick", 0.1,
-			"MeatPatty", 8,
-			"MincedMeat", 8,
-			"MixedVegetables", 10,
-			"Peas", 10,
-			"PorkChop", 8,
-			"Sausage", 8,
-			"Steak", 2,
-			"BrazilianFood.Acai", 10,
-		}
-	}
-
-	ProceduralDistributions.list.FreezerIceCream = {
-		rolls = 4,
-		items = {
-			"Icecream", 50,
-			"Icecream", 20,
-			"Icecream", 20,
-			"Icecream", 10,
-			"Icecream", 10,
-			"BrazilianFood.Acai", 50,
-			"BrazilianFood.Acai", 20,
-			"BrazilianFood.Acai", 20,
-			"BrazilianFood.Acai", 10,
-			"BrazilianFood.Acai", 10,
-		}
-	}
-
-	ProceduralDistributions.list.TheatreKitchenFreezer = {
-		rolls = 4,
-		items = {
-			"Icecream", 50,
-			"Icecream", 20,
-			"Icecream", 20,
-			"Icecream", 10,
-			"Icecream", 10,
-			"BrazilianFood.Acai", 50,
-			"BrazilianFood.Acai", 20,
-			"BrazilianFood.Acai", 20,
-			"BrazilianFood.Acai", 10,
-			"BrazilianFood.Acai", 10,
-		}
-	}
-
-	ProceduralDistributions.list.CafeteriaSnacks = {
-		rolls = 4,
-		items = {
-			"CakeSlice", 8,
-			"Chocolate", 10,
-			"Chocolate", 10,
-			"CinnamonRoll", 4,
-			"CookieChocolateChip", 4,
-			"CookieJelly", 4,
-			"CookiesChocolate", 4,
-			"CookiesOatmeal", 4,
-			"CookiesShortbread", 4,
-			"CookiesSugar", 4,
-			"Crisps", 8,
-			"Crisps2", 8,
-			"Crisps3", 8,
-			"Crisps4", 8,
-			"Cupcake", 4,
-			"MuffinFruit", 8,
-			"MuffinGeneric", 8,
-			"Painauchocolat", 4,
-			"Pie", 4,
-			"PieApple", 4,
-			"PieBlueberry", 4,
-			"PieKeyLime", 4,
-			"PieLemonMeringue", 4,
-			"PiePumpkin", 4,
-			"PiePumpkin", 4,
-			"BrazilianFood.Fofura", 8,
-			"BrazilianFood.Bis", 10,
-			"BrazilianFood.Bis", 10,
-		}
-	}
-
-	ProceduralDistributions.list.CrateChips = {
-		rolls = 4,
-		items = {
-			"Crisps", 20,
-			"Crisps", 10,
-			"Crisps2", 20,
-			"Crisps2", 10,
-			"Crisps3", 20,
-			"Crisps3", 10,
-			"Crisps4", 20,
-			"Crisps4", 10,
-			"BrazilianFood.Fofura", 20,
-			"BrazilianFood.Fofura", 10,
-		}
-	}
-
-	ProceduralDistributions.list.GigamartCrisps = {
-		rolls = 4,
-		items = {
-			"Crisps", 20,
-			"Crisps", 10,
-			"Crisps2", 20,
-			"Crisps2", 10,
-			"Crisps3", 20,
-			"Crisps3", 10,
-			"Crisps4", 20,
-			"Crisps4", 10,
-			"TortillaChips", 10,
-			"Peanuts", 10,
-			"Popcorn", 10,
-			"SunflowerSeeds", 10,
-			"BrazilianFood.Fofura", 20,
-			"BrazilianFood.Fofura", 10,
-		}
-	}
-
-	ProceduralDistributions.list.GroceryStorageCrate1 = {
-		rolls = 4,
-		items = {
-			"BouillonCube", 1,
-			"Candycane", 1,
-			"CandyFruitSlices", 1,
-			"CandyPackage", 1,
-			"CannedBolognese", 1,
-			"CannedCarrots2", 0.8,
-			"CannedChili", 1,
-			"CannedCorn", 0.8,
-			"CannedCornedBeef", 1,
-			"CannedFruitCocktail", 1,
-			"CannedMilk", 0.4,
-			"CannedMushroomSoup", 1,
-			"CannedPeaches", 0.8,
-			"CannedPeas", 0.8,
-			"CannedPineapple", 0.8,
-			"CannedPotato2", 0.8,
-			"CannedSardines", 1,
-			"CannedTomato2", 0.8,
-			"Cereal", 1,
-			"Chocolate", 1,
-			"ChocolateCoveredCoffeeBeans", 1,
-			"Coffee2", 1,
-			"Crackers", 1,
-			"Crisps", 1,
-			"Crisps2", 1,
-			"Crisps3", 1,
-			"Crisps4", 1,
-			"DriedBlackBeans", 0.8,
-			"DriedChickpeas", 0.8,
-			"DriedKidneyBeans", 0.8,
-			"DriedLentils", 0.8,
-			"DriedSplitPeas", 0.8,
-			"DriedWhiteBeans", 0.8,
-			"GranolaBar", 1,
-			"Gum", 1,
-			"GummyBears", 1,
-			"GummyWorms", 1,
-			"HardCandies", 1,
-			"JellyBeans", 1,
-			"Jujubes", 1,
-			"LicoriceBlack", 1,
-			"LicoriceRed", 1,
-			"Macandcheese", 1,
-			"MintCandy", 1,
-			"Modjeska", 1,
-			"Pasta", 1,
-			"Peanuts", 1,
-			"Peppermint", 1,
-			"Popcorn", 1,
-			"Ramen", 1,
-			"Rice", 1,
-			"RockCandy", 1,
-			"SackProduce_Apple", 0.1,
-			"SackProduce_BellPepper", 0.1,
-			"SackProduce_Broccoli", 0.1,
-			"SackProduce_Cabbage", 0.1,
-			"SackProduce_Carrot", 0.1,
-			"SackProduce_Cherry", 0.1,
-			"SackProduce_Corn", 0.1,
-			"SackProduce_Eggplant", 0.1,
-			"SackProduce_Leek", 0.1,
-			"SackProduce_Lettuce", 0.1,
-			"SackProduce_Onion", 0.1,
-			"SackProduce_Peach", 0.1,
-			"SackProduce_Pear", 0.1,
-			"SackProduce_Potato", 0.1,
-			"SackProduce_RedRadish", 0.1,
-			"SackProduce_Strawberry", 0.1,
-			"SackProduce_Tomato", 0.1,
-			"SunflowerSeeds", 1,
-			"TacoShell", 1,
-			"Teabag2", 1,
-			"TinnedBeans", 1,
-			"TinnedSoup", 1,
-			"TortillaChips", 1,
-			"TunaTin", 1,
-			"TVDinner", 1,
-			"BrazilianFood.Fofura", 1,
-			"BrazilianFood.Pacoquinha", 1,
-			"BrazilianFood.Yoki", 1,
-			"BrazilianFood.Bis", 1,
-		}
-	}
-
-	ProceduralDistributions.list.KitchenDryFood = {
-		rolls = 4,
-		items = {
-			"BeefJerky", 6,
-			"BouillonCube", 10,
-			"Cereal", 10,
-			"Chocolate", 6,
-			"Crackers", 10,
-			"Crisps", 4,
-			"Crisps2", 4,
-			"Crisps3", 4,
-			"Crisps4", 4,
-			"DishCloth", 10,
-			"DriedBlackBeans", 5,
-			"DriedChickpeas", 5,
-			"DriedKidneyBeans", 5,
-			"DriedLentils", 5,
-			"DriedSplitPeas", 5,
-			"DriedWhiteBeans", 5,
-			"Macandcheese", 10,
-			"Marinara", 10,
-			"Pasta", 10,
-			"Pepper", 8,
-			"Popcorn", 8,
-			"Ramen", 6,
-			"Rice", 4,
-			"Salt", 8,
-			"TacoShell", 2,
-			"TortillaChips", 4,
-			"TVDinner", 4,
-			"BrazilianFood.Fofura", 4,
-			"BrazilianFood.Yoki", 10,
-			"BrazilianFood.Bis", 6,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"DeadMouse", 1,
-				"DeadRat", 1,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.PrisonCellRandom = {
-		rolls = 4,
-		items = {
-			"Antibiotics", 0.20,
-			"Bandage", 0.20,
-			"BorisBadger", 0.001,
-			"Bowl", 10,
-			"ButterKnife", 0.05,
-			"Cereal", 4,
-			"Chocolate", 4,
-			"Cigarettes", 8,
-			"Comb", 4,
-			"CordlessPhone", 0.01,
-			"Crayons", 8,
-			"Crisps", 10,
-			"CuttingBoardPlastic", 0.01,
-			"CuttingBoardWooden", 0.01,
-			"Doll", 4,
-			"FluffyfootBunny", 0.001,
-			"FreddyFox", 0.001,
-			"FurbertSquirrel", 0.001,
-			"HottieZ", 0.01,
-			"JacquesBeaver", 0.001,
-			"KitchenKnife", 0.01,
-			"Lighter", 4,
-			"Magazine", 10,
-			"MagazineCrossword1", 2,
-			"MagazineCrossword2", 2,
-			"MagazineCrossword3", 2,
-			"MagazineWordsearch1", 2,
-			"MagazineWordsearch2", 2,
-			"MagazineWordsearch3", 2,
-			"Matches", 8,
-			"Mirror", 8,
-			"MoleyMole", 0.001,
-			"Mugl", 4,
-			"MugRed", 4,
-			"MugWhite", 4,
-			"Newspaper", 10,
-			"Notebook", 10,
-			"PancakeHedgehog", 0.001,
-			"Pencil", 10,
-			"Pills", 0.5,
-			"Radio.CDplayer", 1,
-			"Radio.RadioBlack", 1,
-			"Ramen", 10,
-			"SheetPaper2", 10,
-			"Shoes_FlipFlop", 6,
-			"Soap2", 10,
-			"Socks_Ankle", 4,
-			"Spiffo", 0.001,
-			"Spoon", 20,
-			"Teabag2", 6,
-			"Toothbrush", 10,
-			"Toothpaste", 10,
-			"ToyBear", 4,
-			"TunaTin", 4,
-			"WhiskeyFull", 0.01,
-			"BrazilianFood.Fofura", 10,
-			"BrazilianFood.CoroteFull", 0.01,
-			"BrazilianFood.Bis", 4,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"BathTowel", 20,
-				"Boilersuit_Prisoner", 100,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.StoreShelfSnacks = {
-		rolls = 4,
-		items = {
-			"BeefJerky", 8,
-			"CandyPackage", 4,
-			"ChocoCakes", 8,
-			"Chocolate", 8,
-			"Crisps", 10,
-			"Crisps2", 10,
-			"Crisps3", 10,
-			"Crisps4", 10,
-			"DehydratedMeatStick", 10,
-			"GranolaBar", 8,
-			"Gum", 10,
-			"GummyBears", 10,
-			"GummyWorms", 10,
-			"HiHis", 8,
-			"JellyBeans", 10,
-			"Jujubes", 10,
-			"LicoriceBlack", 4,
-			"LicoriceRed", 10,
-			"Peanuts", 6,
-			"Plonkies", 8,
-			"QuaggaCakes", 8,
-			"SnoGlobes", 8,
-			"SunflowerSeeds", 6,
-			"TortillaChips", 10,
-			"BrazilianFood.Fofura", 10,
-			"BrazilianFood.PipocaDoce", 8,
-			"BrazilianFood.BolachaDoce", 8,
-			"BrazilianFood.Bis", 8,
-		}
-	}
-
-	ProceduralDistributions.list.BakeryKitchenBaking = {
-		rolls = 4,
-		items = {
-			"Aluminum", 8,
-			"BakingSoda", 10,
-			"BreadKnife", 6,
-			"CannedMilk", 4,
-			"ChocolateChips", 10,
-			"CocoaPowder", 10,
-			"Flour", 10,
-			"Flour", 20,
-			"OilVegetable", 10,
-			"RollingPin", 8,
-			"Sugar", 10,
-			"SugarBrown", 10,
-			"Yeast", 10,
-			"BrazilianFood.FarinhaTapioca", 10,
-			"BrazilianFood.FarinhaTapioca", 20,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"Apron_White", 20,
-				"DishCloth", 20,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.ChineseKitchenBaking = {
-		rolls = 4,
-		items = {
-			"Aluminum", 8,
-			"BreadKnife", 8,
-			"Flour", 20,
-			"Flour", 10,
-			"OilVegetable", 10,
-			"Rice", 20,
-			"Rice", 10,
-			"RollingPin", 8,
-			"Yeast", 10,
-			"BrazilianFood.FarinhaTapioca", 20,
-			"BrazilianFood.FarinhaTapioca", 10,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"Apron_White", 20,
-				"DishCloth", 20,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.CrateFlour = {
-		rolls = 4,
-		items = {
-			"Flour", 50,
-			"Flour", 20,
-			"Flour", 20,
-			"Flour", 10,
-			"Flour", 10,
-			"BrazilianFood.FarinhaTapioca", 50,
-			"BrazilianFood.FarinhaTapioca", 20,
-			"BrazilianFood.FarinhaTapioca", 20,
-			"BrazilianFood.FarinhaTapioca", 10,
-			"BrazilianFood.FarinhaTapioca", 10,
-		}
-	}
-
-	ProceduralDistributions.list.GigamartBakingMisc = {
-		rolls = 4,
-		items = {
-			"Aluminum", 20,
-			"Aluminum", 10,
-			"BakingSoda", 10,
-			"CannedMilk", 4,
-			"ChocolateChips", 10,
-			"CocoaPowder", 10,
-			"Flour", 20,
-			"Flour", 10,
-			"OatsRaw", 10,
-			"OilOlive", 10,
-			"OilVegetable", 10,
-			"Sugar", 10,
-			"SugarBrown", 10,
-			"Yeast", 10,
-			"BrazilianFood.FarinhaTapioca", 20,
-			"BrazilianFood.FarinhaTapioca", 10,
-		}
-	}
-
-	ProceduralDistributions.list.ItalianKitchenBaking = {
-		rolls = 4,
-		items = {
-			"Aluminum", 8,
-			"BreadKnife", 8,
-			"DriedBlackBeans", 5,
-			"DriedChickpeas", 5,
-			"DriedKidneyBeans", 5,
-			"DriedLentils", 5,
-			"DriedSplitPeas", 5,
-			"DriedWhiteBeans", 5,
-			"Flour", 10,
-			"Flour", 20,
-			"OilOlive", 10,
-			"OilOlive", 20,
-			"Pasta", 10,
-			"Pasta", 20,
-			"RollingPin", 8,
-			"Yeast", 10,
-			"BrazilianFood.FarinhaTapioca", 10,
-			"BrazilianFood.FarinhaTapioca", 20,
-			"BrazilianFood.Yoki", 10,
-			"BrazilianFood.Yoki", 20,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"Apron_White", 20,
-				"DishCloth", 20,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.JaysKitchenBaking = {
-		rolls = 4,
-		items = {
-			"Aluminum", 8,
-			"BakingSoda", 10,
-			"BreadKnife", 8,
-			"Cornflour", 20,
-			"Cornflour", 10,
-			"Flour", 20,
-			"Flour", 10,
-			"OilVegetable", 20,
-			"OilVegetable", 10,
-			"RollingPin", 8,
-			"Sugar", 10,
-			"Yeast", 10,
-			"BrazilianFood.FarinhaTapioca", 20,
-			"BrazilianFood.FarinhaTapioca", 10,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"Apron_White", 20,
-				"DishCloth", 20,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.KitchenBaking = {
-		rolls = 4,
-		items = {
-			"Aluminum", 8,
-			"BakingSoda", 6,
-			"CannedMilk", 4,
-			"Chocolate", 8,
-			"ChocolateChips", 6,
-			"CocoaPowder", 6,
-			"Cornflour", 2,
-			"Flour", 10,
-			"GrahamCrackers", 6,
-			"GravyMix", 2,
-			"Marshmallows", 6,
-			"OilOlive", 4,
-			"OilVegetable", 6,
-			"PancakeMix", 8,
-			"Sugar", 6,
-			"SugarBrown", 6,
-			"Yeast", 4,
-			"BrazilianFood.FarinhaTapioca", 10,
-			"BrazilianFood.Bis", 8,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"DeadMouse", 1,
-				"DeadRat", 1,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.PizzaKitchenBaking = {
-		rolls = 4,
-		items = {
-			"Aluminum", 8,
-			"BakingTray", 10,
-			"BakingTray", 20,
-			"BreadKnife", 8,
-			"Flour", 10,
-			"Flour", 20,
-			"OilOlive", 10,
-			"PizzaRecipe", 10,
-			"RollingPin", 8,
-			"Yeast", 10,
-			"BrazilianFood.FarinhaTapioca", 10,
-			"BrazilianFood.FarinhaTapioca", 20,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"Apron_White", 20,
-				"DishCloth", 20,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.StoreKitchenBaking = {
-		rolls = 4,
-		items = {
-			"Aluminum", 8,
-			"BakingPan", 10,
-			"BakingSoda", 10,
-			"BakingTray", 10,
-			"CannedMilk", 4,
-			"Flour", 10,
-			"Flour", 20,
-			"MuffinTray", 10,
-			"OilOlive", 10,
-			"OilVegetable", 10,
-			"RollingPin", 8,
-			"Sugar", 10,
-			"Yeast", 10,
-			"BrazilianFood.FarinhaTapioca", 10,
-			"BrazilianFood.FarinhaTapioca", 20,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"Apron_White", 20,
-				"DishCloth", 20,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.WesternKitchenBaking = {
-		rolls = 4,
-		items = {
-			"Aluminum", 8,
-			"BakingSoda", 10,
-			"BreadKnife", 8,
-			"Cornflour", 20,
-			"Cornflour", 10,
-			"Flour", 20,
-			"Flour", 10,
-			"OilVegetable", 10,
-			"RollingPin", 8,
-			"Sugar", 10,
-			"Yeast", 10,
-			"BrazilianFood.FarinhaTapioca", 20,
-			"BrazilianFood.FarinhaTapioca", 10,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"Apron_White", 20,
-				"DishCloth", 20,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.CandyStoreSnacks = {
-		rolls = 4,
-		items = {
-			"CandyFruitSlices", 10,
-			"Candycane", 10,
-			"Chocolate", 10,
-			"ChocolateCoveredCoffeeBeans", 10,
-			"Gum", 10,
-			"GummyBears", 10,
-			"GummyWorms", 10,
-			"HardCandies", 10,
-			"JellyBeans", 10,
-			"Jujubes", 10,
-			"LicoriceBlack", 10,
-			"LicoriceRed", 10,
-			"MintCandy", 10,
-			"Modjeska", 10,
-			"Peppermint", 10,
-			"RockCandy", 10,
-			"BrazilianFood.Pacoquinha", 10,
-			"BrazilianFood.Bis", 10,
-		}
-	}
-
-	ProceduralDistributions.list.GigamartCandy = {
-		rolls = 4,
-		items = {
-			"CandyFruitSlices", 10,
-			"CandyPackage", 10,
-			"Candycane", 10,
-			"Candycane", 10,
-			"Chocolate", 10,
-			"ChocolateCoveredCoffeeBeans", 10,
-			"GranolaBar", 10,
-			"Gum", 10,
-			"GummyBears", 10,
-			"GummyWorms", 10,
-			"HardCandies", 10,
-			"JellyBeans", 10,
-			"Jujubes", 10,
-			"LicoriceBlack", 10,
-			"LicoriceRed", 10,
-			"MintCandy", 10,
-			"Modjeska", 10,
-			"Peppermint", 10,
-			"RockCandy", 10,
-			"BrazilianFood.Pacoquinha", 10,
-			"BrazilianFood.Bis", 10,
-		}
-	}
-
-	ProceduralDistributions.list.CrateSodaBottles = {
-		rolls = 4,
-		items = {
-			"PopBottle", 50,
-			"PopBottle", 20,
-			"PopBottle", 20,
-			"PopBottle", 10,
-			"PopBottle", 10,
-			"BrazilianFood.Dolly", 50,
-			"BrazilianFood.Dolly", 20,
-			"BrazilianFood.Dolly", 20,
-			"BrazilianFood.Dolly", 10,
-			"BrazilianFood.Dolly", 10,
-		}
-	}
-
-	ProceduralDistributions.list.FridgeBottles = {
-		rolls = 4,
-		items = {
-			"WaterBottleFull", 20,
-			"WaterBottleFull", 20,
-			"WaterBottleFull", 10,
-			"WaterBottleFull", 10,
-			"PopBottle", 20,
-			"PopBottle", 20,
-			"PopBottle", 10,
-			"PopBottle", 10,
-			"BrazilianFood.Dolly", 20,
-			"BrazilianFood.Dolly", 20,
-			"BrazilianFood.Dolly", 10,
-			"BrazilianFood.Dolly", 10,
-		}
-	}
-
-	ProceduralDistributions.list.FridgeGeneric = {
-		rolls = 4,
-		items = {
-			"Apple", 2,
-			"Avocado", 1,
-			"Baloney", 0.8,
-			"Banana", 2,
-			"BeerBottle", 1,
-			"BeerCan", 1,
-			"BellPepper", 1,
-			"Broccoli", 2,
-			"Butter", 2,
-			"Carrots", 2,
-			"Cheese", 2,
-			"Cherry", 2,
-			"Chicken", 0.8,
-			"Corn", 2,
-			"EggCarton", 0.8,
-			"Eggplant", 2,
-			"Grapefruit", 2,
-			"Grapes", 2,
-			"Ham", 0.8,
-			"Hotsauce", 0.20,
-			"JuiceBox", 1,
-			"Ketchup", 0.20,
-			"Lard", 1,
-			"Leek", 2,
-			"Lemon", 2,
-			"Lettuce", 2,
-			"Lime", 2,
-			"MapleSyrup", 0.20,
-			"Margarine", 2,
-			"MeatPatty", 0.8,
-			"Milk", 4,
-			"MincedMeat", 0.8,
-			"Mustard", 0.20,
-			"MuttonChop", 0.5,
-			"Onion", 2,
-			"Orange", 2,
-			"Paperbag_Jays", 0.1,
-			"Paperbag_Spiffos", 0.1,
-			"Peach", 2,
-			"Pear", 2,
-			"PepperJalapeno", 1,
-			"Pickles", 6,
-			"Pineapple", 1,
-			"PopBottle", 2,
-			"PorkChop", 0.8,
-			"Processedcheese", 6,
-			"Salami", 0.8,
-			"Salmon", 0.5,
-			"Sausage", 0.8,
-			"Soysauce", 0.20,
-			"Steak", 0.5,
-			"WaterBottleFull", 1,
-			"Watermelon", 0.20,
-			"Yoghurt", 1,
-			"Zucchini", 2,
-			"farming.Bacon", 0.8,
-			"farming.Cabbage", 2,
-			"farming.MayonnaiseFull", 0.20,
-			"farming.RedRadish", 2,
-			"farming.RemouladeFull", 0.20,
-			"farming.Strewberrie", 2,
-			"farming.Tomato", 2,
-			"BrazilianFood.Dolly", 2,
-		}
-	}
-
-	ProceduralDistributions.list.FridgeRich = {
-		rolls = 4,
-		items = {
-			"Apple", 2,
-			"Avocado", 2,
-			"Baloney", 2,
-			"Banana", 2,
-			"BeerBottle", 4,
-			"BellPepper", 2,
-			"Broccoli", 2,
-			"Butter", 4,
-			"Carrots", 2,
-			"Cheese", 2,
-			"Cherry", 2,
-			"Chicken", 0.8,
-			"Corn", 2,
-			"EggCarton", 0.8,
-			"Eggplant", 2,
-			"Grapefruit", 2,
-			"Grapes", 2,
-			"Ham", 0.8,
-			"Hotsauce", 0.20,
-			"JuiceBox", 1,
-			"Ketchup", 0.20,
-			"Lard", 2,
-			"Leek", 2,
-			"Lemon", 2,
-			"Lettuce", 2,
-			"Lime", 2,
-			"Lobster", 0.8,
-			"MapleSyrup", 0.20,
-			"Margarine", 4,
-			"MeatPatty", 0.8,
-			"Milk", 4,
-			"MincedMeat", 0.8,
-			"Mustard", 0.20,
-			"MuttonChop", 0.8,
-			"Onion", 2,
-			"Orange", 2,
-			"Peach", 2,
-			"Pear", 2,
-			"PepperJalapeno", 2,
-			"Pickles", 6,
-			"Pineapple", 2,
-			"PopBottle", 2,
-			"PorkChop", 0.8,
-			"Processedcheese", 6,
-			"Salami", 0.8,
-			"Salmon", 0.8,
-			"Sausage", 0.8,
-			"Soysauce", 0.20,
-			"Squid", 0.8,
-			"Steak", 0.8,
-			"WaterBottleFull", 1,
-			"Watermelon", 0.20,
-			"Wine", 1,
-			"Wine2", 1,
-			"Yoghurt", 1,
-			"Zucchini", 4,
-			"farming.Bacon", 0.8,
-			"farming.Cabbage", 2,
-			"farming.MayonnaiseFull", 0.20,
-			"farming.RedRadish", 2,
-			"farming.RemouladeFull", 0.20,
-			"farming.Strewberrie", 2,
-			"farming.Tomato", 2,
-			"BrazilianFood.Dolly", 2,
-			"BrazilianFood.PaoDeQueijoCongelado", 2,
-			"BrazilianFood.BolinhoCaipira", 2,
-			"BrazilianFood.CoxinhaCrua", 4,
-			"BrazilianFood.MassaBrigadeiro", 2,
-			"BrazilianFood.Brigadeiro", 1,
-		}
-	}
-
-	ProceduralDistributions.list.CratePasta = {
-		rolls = 4,
-		items = {
-			"Pasta", 50,
-			"Pasta", 20,
-			"Pasta", 20,
-			"Pasta", 10,
-			"Pasta", 10,
-			"BrazilianFood.Yoki", 50,
-			"BrazilianFood.Yoki", 20,
-			"BrazilianFood.Yoki", 20,
-			"BrazilianFood.Yoki", 10,
-			"BrazilianFood.Yoki", 10,
-		}
-	}
-
-	ProceduralDistributions.list.GigamartDryGoods = {
-		rolls = 4,
-		items = {
-			"BouillonCube", 10,
-			"Cereal", 10,
-			"Coffee2", 10,
-			"Crackers", 10,
-			"DriedBlackBeans", 8,
-			"DriedChickpeas", 8,
-			"DriedKidneyBeans", 8,
-			"DriedLentils", 8,
-			"DriedSplitPeas", 8,
-			"DriedWhiteBeans", 8,
-			"Macandcheese", 10,
-			"Pasta", 10,
-			"Ramen", 10,
-			"Rice", 10,
-			"TVDinner", 10,
-			"TacoShell", 10,
-			"Teabag2", 10,
-			"BrazilianFood.Yoki", 10,
-		}
-	}
-
-	ProceduralDistributions.list.BarCounterLiquor = {
-		rolls = 4,
-		items = {
-			"WhiskeyFull", 20,
-			"WhiskeyFull", 10,
-			"Wine", 20,
-			"Wine", 10,
-			"Wine2", 20,
-			"Wine2", 10,
-			"BeerCan", 20,
-			"BeerCan", 20,
-			"BeerCan", 10,
-			"BeerCan", 10,
-			"BeerBottle", 20,
-			"BeerBottle", 20,
-			"BeerBottle", 10,
-			"BeerBottle", 10,
-			"BrazilianFood.CoroteFull", 20,
-			"BrazilianFood.CoroteFull", 10,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"DishCloth", 20,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.BarCounterWeapon = {
-		rolls = 4,
-		items = {
-			"Bag_ShotgunDblSawnoffBag", 0.01,
-			"BeerBottle", 20,
-			"BeerBottle", 20,
-			"BeerBottle", 10,
-			"BeerBottle", 10,
-			"BeerCan", 20,
-			"BeerCan", 20,
-			"BeerCan", 10,
-			"BeerCan", 10,
-			"DoubleBarrelShotgunSawnoff", 0.1,
-			"WhiskeyFull", 20,
-			"WhiskeyFull", 10,
-			"Wine", 20,
-			"Wine", 10,
-			"Wine2", 20,
-			"Wine2", 10,
-			"BrazilianFood.CoroteFull", 20,
-			"BrazilianFood.CoroteFull", 10,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"DishCloth", 20,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.BarShelfLiquor = {
-		rolls = 4,
-		items = {
-			"BeerBottle", 20,
-			"BeerBottle", 20,
-			"BeerBottle", 10,
-			"BeerBottle", 10,
-			"BeerCan", 20,
-			"BeerCan", 20,
-			"BeerCan", 10,
-			"BeerCan", 10,
-			"WhiskeyFull", 20,
-			"WhiskeyFull", 10,
-			"Wine", 20,
-			"Wine", 10,
-			"Wine2", 20,
-			"Wine2", 10,
-			"BrazilianFood.CoroteFull", 20,
-			"BrazilianFood.CoroteFull", 10,
-		}
-	}
-
-	ProceduralDistributions.list.DishCabinetGeneric = {
-		rolls = 4,
-		items = {
-			"Corkscrew", 2,
-			"GlassWine", 20,
-			"GlassWine", 10,
-			"IcePick", 0.1,
-			"PlateFancy", 20,
-			"PlateFancy", 10,
-			"Teacup", 20,
-			"Teacup", 10,
-			"WhiskeyFull", 4,
-			"Wine", 6,
-			"Wine2", 6,
-			"BrazilianFood.CoroteFull", 4,
-		}
-	}
-
-	ProceduralDistributions.list.DishCabinetLiquor = {
-		rolls = 4,
-		items = {
-			"Corkscrew", 2,
-			"GlassWine", 20,
-			"GlassWine", 10,
-			"IcePick", 0.1,
-			"WhiskeyFull", 20,
-			"WhiskeyFull", 10,
-			"Wine", 20,
-			"Wine", 10,
-			"Wine2", 20,
-			"Wine2", 10,
-			"BrazilianFood.CoroteFull", 20,
-			"BrazilianFood.CoroteFull", 10,
-		}
-	}
-
-	ProceduralDistributions.list.DrugShackDrugs = {
-		rolls = 4,
-		items = {
-			"BeerBottle", 20,
-			"BeerBottle", 10,
-			"BeerCan", 20,
-			"BeerCan", 10,
-			"Cigarettes", 20,
-			"Cigarettes", 10,
-			"Pills", 20,
-			"Pills", 10,
-			"WhiskeyFull", 20,
-			"WhiskeyFull", 10,
-			"BrazilianFood.CoroteFull", 20,
-			"BrazilianFood.CoroteFull", 10,
-		}
-	}
-
-	ProceduralDistributions.list.FoodGourmet = {
-		rolls = 4,
-		items = {
-			"BookCooking1", 10,
-			"BookCooking2", 8,
-			"BookCooking3", 6,
-			"BookCooking4", 4,
-			"BookCooking5", 2,
-			"Corkscrew", 2,
-			"IcePick", 0.1,
-			"GlassWine", 20,
-			"GlassWine", 10,
-			"WhiskeyFull", 20,
-			"WhiskeyFull", 10,
-			"Wine", 20,
-			"Wine", 10,
-			"Wine2", 20,
-			"Wine2", 10,
-			"BrazilianFood.CoroteFull", 20,
-			"BrazilianFood.CoroteFull", 10,
-		}
-	}
-
-	ProceduralDistributions.list.JanitorMisc = {
-		rolls = 4,
-		items = {
-			"Cigarettes", 8,
-			"ComicBook", 4,
-			"Glasses_SafetyGoggles", 8,
-			"HottieZ", 1,
-			"Lighter", 4,
-			"Lunchbag", 10,
-			"Lunchbox", 10,
-			"Lunchbox2", 0.001,
-			"Magazine", 20,
-			"Magazine", 10,
-			"MagazineCrossword1", 2,
-			"MagazineCrossword2", 2,
-			"MagazineCrossword3", 2,
-			"MagazineWordsearch1", 2,
-			"MagazineWordsearch2", 2,
-			"MagazineWordsearch3", 2,
-			"Matches", 8,
-			"Mugl", 4,
-			"MugRed", 4,
-			"MugWhite", 4,
-			"Newspaper", 10,
-			"Radio.WalkieTalkie2", 2,
-			"RippedSheets", 20,
-			"RippedSheets", 10,
-			"RippedSheetsDirty", 20,
-			"RippedSheetsDirty", 10,
-			"WhiskeyFull", 0.1,
-			"BrazilianFood.CoroteFull", 0.1,
-		}
-	}
-
-	ProceduralDistributions.list.MechanicShelfMisc = {
-		rolls = 4,
-		items = {
-			"Bleach", 8,
-			"Broom", 10,
-			"BucketEmpty", 10,
-			"Cigarettes", 8,
-			"CleaningLiquid2", 4,
-			"Garbagebag", 10,
-			"Glasses_SafetyGoggles", 8,
-			"HottieZ", 0.1,
-			"Magazine", 10,
-			"Mop", 10,
-			"Newspaper", 10,
-			"RippedSheets", 20,
-			"RippedSheets", 10,
-			"RippedSheetsDirty", 20,
-			"RippedSheetsDirty", 10,
-			"Tarp", 10,
-			"WhiskeyFull", 0.1,
-			"BrazilianFood.CoroteFull", 0.1,
-		}
-	}
-
-	ProceduralDistributions.list.OfficeDesk = {
-		rolls = 4,
-		items = {
-			"BluePen", 8,
-			"Briefcase", 0.5,
-			"CardDeck", 1,
-			"Cigarettes", 8,
-			"Cologne", 1,
-			"Comb", 2,
-			"Disc_Retail", 2,
-			"Eraser", 8,
-			"Glue", 2,
-			"HolePuncher", 4,
-			"LetterOpener", 1,
-			"Lighter", 4,
-			"Lipstick", 1,
-			"Magazine", 10,
-			"MagazineCrossword1", 2,
-			"MagazineCrossword2", 2,
-			"MagazineCrossword3", 2,
-			"MagazineWordsearch1", 2,
-			"MagazineWordsearch2", 2,
-			"MagazineWordsearch3", 2,
-			"MakeupEyeshadow", 1,
-			"MakeupFoundation", 1,
-			"Matches", 8,
-			"Newspaper", 10,
-			"Notebook", 10,
-			"Paperclip", 10,
-			"PaperclipBox", 1,
-			"Pen", 8,
-			"Pencil", 10,
-			"Perfume", 1,
-			"PillsVitamins", 1,
-			"Radio.CDplayer", 1,
-			"Radio.RadioBlack", 2,
-			"Radio.RadioRed", 1,
-			"RedPen", 8,
-			"RubberBand", 6,
-			"Scissors", 2,
-			"Scotchtape", 4,
-			"SheetPaper2", 20,
-			"SheetPaper2", 10,
-			"Stapler", 4,
-			"Staples", 4,
-			"Toothbrush", 1,
-			"WhiskeyFull", 0.1,
-			"BrazilianFood.CoroteFull", 0.1,
-		}
-	}
-
-	ProceduralDistributions.list.OfficeDeskHome = {
-		rolls = 4,
-		items = {
-			"BluePen", 8,
-			"Briefcase", 0.5,
-			"CardDeck", 1,
-			"Cigarettes", 8,
-			"Cologne", 1,
-			"Comb", 2,
-			"Disc_Retail", 2,
-			"Eraser", 8,
-			"Frame", 4,
-			"Glue", 2,
-			"HolePuncher", 4,
-			"Lighter", 4,
-			"Lipstick", 1,
-			"Magazine", 4,
-			"MagazineCrossword1", 2,
-			"MagazineCrossword2", 2,
-			"MagazineCrossword3", 2,
-			"MagazineWordsearch1", 2,
-			"MagazineWordsearch2", 2,
-			"MagazineWordsearch3", 2,
-			"MakeupEyeshadow", 1,
-			"MakeupFoundation", 1,
-			"Matches", 8,
-			"Newspaper", 10,
-			"Notebook", 10,
-			"Paperclip", 10,
-			"PaperclipBox", 1,
-			"Pen", 8,
-			"Pencil", 10,
-			"Perfume", 1,
-			"Pills", 0.5,
-			"PillsVitamins", 1,
-			"Pistol", 0.05,
-			"Pistol2", 0.01,
-			"Pistol3", 0.005,
-			"PistolCase1", 0.01,
-			"PistolCase2", 0.005,
-			"PistolCase3", 0.001,
-			"Radio.CDplayer", 1,
-			"RedPen", 8,
-			"Revolver", 0.01,
-			"RevolverCase1", 0.01,
-			"RevolverCase2", 0.005,
-			"RevolverCase3", 0.001,
-			"Revolver_Long", 0.005,
-			"Revolver_Short", 0.05,
-			"RubberBand", 6,
-			"Scissors", 2,
-			"Scotchtape", 4,
-			"SheetPaper2", 20,
-			"SheetPaper2", 10,
-			"Stapler", 4,
-			"Staples", 4,
-			"Toothbrush", 1,
-			"WhiskeyFull", 0.5,
-			"BrazilianFood.CoroteFull", 0.5,
-		}
-	}
-
-	ProceduralDistributions.list.PlankStashGun = {
-		rolls = 4,
-		items = {
-			"Cigarettes", 8,
-			"Money", 20,
-			"Money", 10,
-			"Pistol", 8,
-			"Pistol2", 6,
-			"Pistol3", 4,
-			"Revolver", 6,
-			"Revolver_Long", 4,
-			"Revolver_Short", 8,
-			"WhiskeyFull", 2,
-			"BrazilianFood.CoroteFull", 2,
-		}
-	}
-
-	ProceduralDistributions.list.PlankStashMagazine = {
-		rolls = 4,
-		items = {
-			"Cigarettes", 8,
-			"HottieZ", 20,
-			"HottieZ", 20,
-			"HottieZ", 10,
-			"HottieZ", 10,
-			"Magazine", 20,
-			"Magazine", 20,
-			"Magazine", 10,
-			"Magazine", 10,
-			"Tissue", 10,
-			"WhiskeyFull", 2,
-			"BrazilianFood.CoroteFull", 2,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"HottieZ", 100,
-				"Tissue", 100,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.PlankStashMoney = {
-		rolls = 4,
-		items = {
-			"Cigarettes", 8,
-			"Money", 100,
-			"Money", 100,
-			"Money", 100,
-			"Money", 100,
-			"Money", 100,
-			"Money", 100,
-			"Wallet", 10,
-			"Wallet2", 10,
-			"Wallet3", 10,
-			"Wallet4", 10,
-			"WhiskeyFull", 2,
-			"BrazilianFood.CoroteFull", 2,
-		}
-	}
-
-	ProceduralDistributions.list.PoliceDesk = {
-		rolls = 4,
-		items = {
-			"BluePen", 8,
-			"CardDeck", 1,
-			"Cigarettes", 8,
-			"Cologne", 1,
-			"Comb", 2,
-			"Disc_Retail", 2,
-			"Eraser", 8,
-			"Glasses_Aviators", 2,
-			"Glue", 2,
-			"HolsterDouble", 1,
-			"HolsterSimple", 4,
-			"Lighter", 4,
-			"Lipstick", 1,
-			"Magazine", 4,
-			"MagazineCrossword1", 2,
-			"MagazineCrossword2", 2,
-			"MagazineCrossword3", 2,
-			"MagazineWordsearch1", 2,
-			"MagazineWordsearch2", 2,
-			"MagazineWordsearch3", 2,
-			"MakeupEyeshadow", 1,
-			"MakeupFoundation", 1,
-			"Matches", 8,
-			"Newspaper", 4,
-			"Nightstick", 2,
-			"Notebook", 2,
-			"Paperclip", 4,
-			"PaperclipBox", 1,
-			"Pen", 8,
-			"Pencil", 10,
-			"Perfume", 1,
-			"PillsVitamins", 1,
-			"Pistol", 0.1,
-			"Radio.CDplayer", 1,
-			"Radio.WalkieTalkie4", 1,
-			"RedPen", 8,
-			"RubberBand", 6,
-			"Scissors", 2,
-			"Scotchtape", 4,
-			"SheetPaper2", 10,
-			"SheetPaper2", 10,
-			"Toothbrush", 1,
-			"WhiskeyFull", 0.1,
-			"BrazilianFood.CoroteFull", 0.1,
-		}
-	}
-
-	ProceduralDistributions.list.SafehouseMedical = {
-		rolls = 4,
-		items = {
-			"AlcoholWipes", 20,
-			"AlcoholWipes", 10,
-			"Antibiotics", 4,
-			"Bandage", 10,
-			"Disinfectant", 8,
-			"FirstAidKit", 2,
-			"Gloves_Surgical", 10,
-			"Hat_SurgicalMask_Blue", 10,
-			"Pills", 20,
-			"Pills", 10,
-			"PillsAntiDep", 10,
-			"PillsBeta", 10,
-			"PillsSleepingTablets", 10,
-			"RippedSheets", 20,
-			"RippedSheets", 10,
-			"Scalpel", 10,
-			"Scissors", 10,
-			"SutureNeedle", 10,
-			"SutureNeedleHolder", 10,
-			"Tweezers", 10,
-			"WhiskeyFull", 10,
-			"BrazilianFood.CoroteFull", 10,
-		}
-	}
-
-	ProceduralDistributions.list.StoreShelfWhiskey = {
-		rolls = 4,
-		items = {
-			"WhiskeyFull", 50,
-			"WhiskeyFull", 20,
-			"WhiskeyFull", 20,
-			"WhiskeyFull", 10,
-			"WhiskeyFull", 10,
-			"BrazilianFood.CoroteFull", 50,
-			"BrazilianFood.CoroteFull", 20,
-			"BrazilianFood.CoroteFull", 20,
-			"BrazilianFood.CoroteFull", 10,
-			"BrazilianFood.CoroteFull", 10,
-		}
-	}
-
-	ProceduralDistributions.list.WhiskeyBottlingFull = {
-		rolls = 4,
-		items = {
-			"WhiskeyFull", 50,
-			"WhiskeyFull", 20,
-			"WhiskeyFull", 20,
-			"WhiskeyFull", 10,
-			"WhiskeyFull", 10,
-			"BrazilianFood.CoroteFull", 50,
-			"BrazilianFood.CoroteFull", 20,
-			"BrazilianFood.CoroteFull", 20,
-			"BrazilianFood.CoroteFull", 10,
-			"BrazilianFood.CoroteFull", 10,
-		}
-	}
-
-	ProceduralDistributions.list.CrateChocolate = {
-		rolls = 4,
-		items = {
-			"Chocolate", 50,
-			"Chocolate", 20,
-			"Chocolate", 20,
-			"Chocolate", 10,
-			"Chocolate", 10,
-			"BrazilianFood.Bis", 50,
-			"BrazilianFood.Bis", 20,
-			"BrazilianFood.Bis", 20,
-			"BrazilianFood.Bis", 10,
-			"BrazilianFood.Bis", 10,
-		}
-	}
-
-	ProceduralDistributions.list.KitchenBreakfast = {
-		rolls = 4,
-		items = {
-			"Bread", 8,
-			"CannedMilk", 4,
-			"Cereal", 10,
-			"Chocolate", 8,
-			"Coffee2", 6,
-			"Crackers", 10,
-			"DishCloth", 10,
-			"GranolaBar", 8,
-			"Honey", 6,
-			"JamFruit", 8,
-			"JamMarmalade", 2,
-			"MapleSyrup", 6,
-			"OatsRaw", 8,
-			"PancakeMix", 8,
-			"PeanutButter", 10,
-			"Sugar", 6,
-			"SugarBrown", 6,
-			"Teabag2", 6,
-			"BrazilianFood.Bis", 8,
-		},
-		junk = {	
-			rolls = 1,
-			items = {
-				"DeadMouse", 1,
-				"DeadRat", 1,
-			}
-		}
-
-	}
-
-	ProceduralDistributions.list.TheatreSnacks = {
-		rolls = 4,
-		items = {
-			"CandyPackage", 20,
-			"CandyPackage", 10,
-			"Chocolate", 8,
-			"Gum", 10,
-			"GummyBears", 10,
-			"GummyWorms", 10,
-			"JellyBeans", 10,
-			"Jujubes", 10,
-			"LicoriceBlack", 4,
-			"LicoriceRed", 10,
-			"BrazilianFood.Bis", 8,
-		}
-	}
-
-	SuburbsDistributions.all.vendingpop = {
-		rolls = 4,
-		items = {
-			"Pop", 10,
-			"Pop2", 10,
-			"Pop3", 10,
-			"PopBottle", 10,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 10,
-			"BrazilianFood.Dolly", 10,
-		}
-	}
-
-	SuburbsDistributions.Bag_Schoolbag = {
-		rolls = 1,
-		items = {
-			"BluePen", 8,
-			"Book", 10,
-			"Book", 20,
-			"Chocolate", 1,
-			"ComicBook", 10,
-			"Crisps", 1,
-			"Disc_Retail", 2,
-			"Earbuds", 1,
-			"GranolaBar", 1,
-			"Lighter", 1,
-			"Pen", 8,
-			"Pencil", 10,
-			"Pop", 1,
-			"Radio.CDplayer", 1,
-			"RedPen", 8,
-			"RubberBand", 1,
-			"Scissors", 2,
-			"SunflowerSeeds", 1,
-			"BrazilianFood.Guarana", 1,
-			"BrazilianFood.Fofura", 1,
-			"BrazilianFood.Bis", 1,
-		}
-	}
-
-	SuburbsDistributions.GroceryBag1 = {
-		rolls = 1,
-		items = {
-			"Apple", 2,
-			"Avocado", 1,
-			"BakingSoda", 1,
-			"Baloney", 0.8,
-			"Banana", 2,
-			"BellPepper", 1,
-			"BouillonCube", 1,
-			"Broccoli", 2,
-			"Butter", 2,
-			"Candycane", 1,
-			"CandyPackage", 1,
-			"CannedBolognese", 1,
-			"CannedCarrots2", 0.8,
-			"CannedChili", 1,
-			"CannedCorn", 0.8,
-			"CannedCornedBeef", 1,
-			"CannedFruitCocktail", 1,
-			"CannedMushroomSoup", 1,
-			"CannedPeaches", 0.8,
-			"CannedPeas", 0.8,
-			"CannedPineapple", 0.8,
-			"CannedPotato2", 0.8,
-			"CannedSardines", 1,
-			"CannedTomato2", 0.8,
-			"Carrots", 2,
-			"Cereal", 1,
-			"Cheese", 2,
-			"Cherry", 2,
-			"Chicken", 0.8,
-			"Chocolate", 1,
-			"ChocolateChips", 1,
-			"ChocolateCoveredCoffeeBeans", 1,
-			"CocoaPowder", 1,
-			"Coffee2", 1,
-			"Corn", 2,
-			"Crackers", 1,
-			"Crisps", 1,
-			"Crisps2", 1,
-			"Crisps3", 1,
-			"Crisps4", 1,
-			"DriedBlackBeans", 0.8,
-			"DriedChickpeas", 0.8,
-			"DriedKidneyBeans", 0.8,
-			"DriedLentils", 0.8,
-			"DriedSplitPeas", 0.8,
-			"DriedWhiteBeans", 0.8,
-			"EggCarton", 0.8,
-			"Eggplant", 2,
-			"farming.Bacon", 0.8,
-			"farming.Cabbage", 2,
-			"farming.MayonnaiseFull", 0.25,
-			"farming.RedRadish", 2,
-			"farming.RemouladeFull", 0.25,
-			"farming.Strewberrie", 2,
-			"farming.Tomato", 2,
-			"Flour", 1,
-			"GranolaBar", 1,
-			"Grapefruit", 2,
-			"Grapes", 2,
-			"Gum", 1,
-			"GummyBears", 1,
-			"GummyWorms", 1,
-			"Ham", 0.8,
-			"HardCandies", 1,
-			"Hotsauce", 0.25,
-			"JellyBeans", 1,
-			"JuiceBox", 1,
-			"Jujubes", 1,
-			"Ketchup", 0.25,
-			"Lard", 1,
-			"Leek", 2,
-			"Lemon", 2,
-			"Lettuce", 2,
-			"LicoriceBlack", 1,
-			"LicoriceRed", 1,
-			"Lime", 2,
-			"Macandcheese", 1,
-			"MapleSyrup", 0.25,
-			"Margarine", 2,
-			"MeatPatty", 0.8,
-			"Milk", 4,
-			"MincedMeat", 0.8,
-			"MintCandy", 1,
-			"Modjeska", 1,
-			"Mustard", 0.25,
-			"MuttonChop", 0.5,
-			"OatsRaw", 1,
-			"OilOlive", 1,
-			"OilVegetable", 1,
-			"Onion", 2,
-			"Orange", 2,
-			"Pasta", 1,
-			"Peach", 2,
-			"Peanuts", 1,
-			"Pear", 2,
-			"PepperJalapeno", 1,
-			"Peppermint", 1,
-			"Pickles", 6,
-			"Pineapple", 1,
-			"Pop", 4,
-			"Pop2", 4,
-			"Pop3", 4,
-			"PopBottle", 2,
-			"Popcorn", 1,
-			"PorkChop", 0.8,
-			"Processedcheese", 6,
-			"Ramen", 1,
-			"Rice", 1,
-			"RockCandy", 1,
-			"Salami", 0.8,
-			"Salmon", 0.5,
-			"Sausage", 0.8,
-			"Soysauce", 0.25,
-			"Steak", 0.5,
-			"Sugar", 1,
-			"SugarBrown", 1,
-			"SunflowerSeeds", 1,
-			"TacoShell", 1,
-			"Teabag2", 1,
-			"TinnedBeans", 1,
-			"TinnedSoup", 1,
-			"TortillaChips", 1,
-			"TunaTin", 1,
-			"TVDinner", 1,
-			"WaterBottleFull", 1,
-			"Yeast", 1,
-			"Yoghurt", 1,
-			"Zucchini", 2,
-			"BrazilianFood.Guarana", 4,
-			"BrazilianFood.GuaranaJesus", 4,
-			"BrazilianFood.Fofura", 1,
-			"BrazilianFood.FarinhaTapioca", 1,
-			"BrazilianFood.Pacoquinha", 1,
-			"BrazilianFood.Dolly", 2,
-			"BrazilianFood.Yoki", 1,
-			"BrazilianFood.Bis", 1,
-		}
-	}
-
-	SuburbsDistributions.GroceryBag3 = {
-		rolls = 1,
-		items = {
-			"Candycane", 10,
-			"CandyPackage", 10,
-			"CannedBolognese", 10,
-			"CannedChili", 10,
-			"CannedFruitCocktail", 10,
-			"CannedMushroomSoup", 10,
-			"Chocolate", 20,
-			"ChocolateCoveredCoffeeBeans", 10,
-			"Crisps", 10,
-			"Crisps2", 10,
-			"Crisps3", 10,
-			"Crisps4", 10,
-			"GranolaBar", 20,
-			"Gum", 20,
-			"GummyBears", 10,
-			"GummyWorms", 10,
-			"HardCandies", 10,
-			"JellyBeans", 10,
-			"Jujubes", 10,
-			"LicoriceBlack", 10,
-			"LicoriceRed", 10,
-			"MintCandy", 10,
-			"Modjeska", 10,
-			"Peppermint", 10,
-			"Pop", 10,
-			"Pop2", 10,
-			"Pop3", 10,
-			"PopBottle", 10,
-			"Popcorn", 10,
-			"RockCandy", 10,
-			"SunflowerSeeds", 10,
-			"TinnedBeans", 10,
-			"TinnedSoup", 10,
-			"TortillaChips", 10,
-			"TVDinner", 10,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 10,
-			"BrazilianFood.Fofura", 10,
-			"BrazilianFood.Pacoquinha", 10,
-			"BrazilianFood.Dolly", 10,
-			"BrazilianFood.Bis", 20,
-		}
-	}
-
-	SuburbsDistributions.GroceryBag5 = {
-		rolls = 1,
-		items = {
-			"Crisps", 50,
-			"Crisps", 10,
-			"Crisps2", 50,
-			"Crisps2", 10,
-			"Crisps3", 50,
-			"Crisps3", 10,
-			"Crisps4", 50,
-			"Crisps4", 10,
-			"farming.Bacon", 20,
-			"farming.MayonnaiseFull", 20,
-			"farming.Tomato", 20,
-			"Ketchup", 50,
-			"Lettuce", 20,
-			"MincedMeat", 100,
-			"MincedMeat", 100,
-			"MincedMeat", 50,
-			"MincedMeat", 50,
-			"Mustard", 50,
-			"Onion", 20,
-			"Pickles", 20,
-			"Pop", 50,
-			"Pop", 10,
-			"Pop2", 50,
-			"Pop2", 10,
-			"Pop3", 50,
-			"Pop3", 10,
-			"PopBottle", 50,
-			"PopBottle", 10,
-			"Processedcheese", 50,
-			"Processedcheese", 10,
-			"Steak", 50,
-			"Steak", 50,
-			"Steak", 20,
-			"Steak", 20,
-			"TortillaChips", 50,
-			"TortillaChips", 10,
-			"BrazilianFood.Guarana", 50,
-			"BrazilianFood.Guarana", 10,
-			"BrazilianFood.GuaranaJesus", 50,
-			"BrazilianFood.GuaranaJesus", 10,
-			"BrazilianFood.Fofura", 50,
-			"BrazilianFood.Fofura", 10,
-			"BrazilianFood.Dolly", 50,
-			"BrazilianFood.Dolly", 10,
-		}
-	}
-
-	SuburbsDistributions.Bag_Satchel = {
-		rolls = 1,
-		items = {
-			"BluePen", 8,
-			"Book", 20,
-			"Book", 10,
-			"CheeseSandwich", 20,
-			"Cigarettes", 4,
-			"ComicBook", 10,
-			"Crisps", 10,
-			"Disc_Retail", 2,
-			"Earbuds", 1,
-			"Lighter", 1,
-			"PeanutButterSandwich", 20,
-			"Pen", 8,
-			"Pencil", 10,
-			"Pop", 1,
-			"Radio.CDplayer", 1,
-			"RedPen", 8,
-			"RubberBand", 1,
-			"Scissors", 2,
-			"BrazilianFood.Guarana", 1,
-			"BrazilianFood.Fofura", 10,
-		}
-	}
-
-	SuburbsDistributions.all.vendingsnack = {
-		rolls = 4,
-		items = {
-			"Crisps", 10,
-			"Crisps2", 10,
-			"Crisps3", 10,
-			"BrazilianFood.Fofura", 10,
-		}
-	}
-
-	SuburbsDistributions.Bag_ALICEpack = {
-		rolls = 1,
-		items = {
-			"AlcoholWipes", 1,
-			"Bandage", 1,
-			"BathTowel", 2,
-			"camping.CampingTentKit", 0.5,
-			"Chocolate", 1,
-			"Cigarettes", 1,
-			"Crisps", 1,
-			"Disc_Retail", 2,
-			"Earbuds", 1,
-			"GranolaBar", 1,
-			"HoodieDOWN_WhiteTINT", 0.5,
-			"Lighter", 1,
-			"Peanuts", 1,
-			"Radio.CDplayer", 1,
-			"Socks_Ankle", 2,
-			"SunflowerSeeds", 1,
-			"Vest_DefaultTEXTURE_TINT", 2,
-			"WaterBottleFull", 1,
-			"BrazilianFood.Fofura", 1,
-			"BrazilianFood.Bis", 1,
-		}
-	}
-
-	SuburbsDistributions.Bag_BigHikingBag = {
-		rolls = 1,
-		items = {
-			"AlcoholWipes", 1,
-			"Bandage", 1,
-			"BathTowel", 2,
-			"camping.CampingTentKit", 0.5,
-			"Chocolate", 1,
-			"Cigarettes", 1,
-			"Crisps", 1,
-			"Disc_Retail", 2,
-			"Earbuds", 1,
-			"GranolaBar", 1,
-			"HoodieDOWN_WhiteTINT", 0.5,
-			"Lighter", 1,
-			"Peanuts", 1,
-			"Radio.CDplayer", 1,
-			"Socks_Ankle", 2,
-			"SunflowerSeeds", 1,
-			"Vest_DefaultTEXTURE_TINT", 2,
-			"WaterBottleFull", 1,
-			"BrazilianFood.Fofura", 1,
-			"BrazilianFood.Bis", 1,
-		}
-	}
-
-	SuburbsDistributions.Bag_FoodSnacks = {
-		rolls = 2,
-		items = {
-			"BeefJerky", 20,
-			"BeefJerky", 10,
-			"ChocoCakes", 10,
-			"Chocolate", 20,
-			"Chocolate", 10,
-			"Crisps", 10,
-			"Crisps2", 10,
-			"Crisps3", 10,
-			"Crisps4", 10,
-			"DehydratedMeatStick", 20,
-			"DehydratedMeatStick", 10,
-			"GranolaBar", 20,
-			"GranolaBar", 10,
-			"GummyBears", 10,
-			"GummyWorms", 10,
-			"HiHis", 10,
-			"JellyBeans", 10,
-			"Jujubes", 10,
-			"LicoriceBlack", 10,
-			"LicoriceRed", 10,
-			"Peanuts", 10,
-			"Plonkies", 10,
-			"QuaggaCakes", 10,
-			"SnoGlobes", 10,
-			"SunflowerSeeds", 10,
-			"TortillaChips", 10,
-			"BrazilianFood.Fofura", 10,
-			"BrazilianFood.PipocaDoce", 10,
-			"BrazilianFood.BolachaDoce", 10,
-			"BrazilianFood.Bis", 20,
-			"BrazilianFood.Bis", 10,
-		}
-	}
-
-	SuburbsDistributions.Bag_NormalHikingBag = {
-		rolls = 1,
-		items = {
-			"AlcoholWipes", 1,
-			"Bandage", 1,
-			"BathTowel", 2,
-			"Chocolate", 1,
-			"Cigarettes", 1,
-			"Crisps", 1,
-			"Disc_Retail", 2,
-			"Earbuds", 1,
-			"GranolaBar", 1,
-			"HoodieDOWN_WhiteTINT", 0.5,
-			"Lighter", 1,
-			"Peanuts", 1,
-			"Radio.CDplayer", 1,
-			"Socks_Ankle", 2,
-			"SunflowerSeeds", 1,
-			"Vest_DefaultTEXTURE_TINT", 2,
-			"WaterBottleFull", 1,
-			"BrazilianFood.Fofura", 1,
-			"BrazilianFood.Bis", 1,
-		}
-	}
-
-	SuburbsDistributions.Bag_SurvivorBag = {
-		rolls = 2,
-		items = {
-			"Bandage", 10,
-			"Bandaid", 10,
-			"BeefJerky", 20,
-			"CannedBolognese", 20,
-			"CannedCarrots2", 20,
-			"CannedChili", 20,
-			"CannedCorn", 20,
-			"CannedCornedBeef", 20,
-			"CannedFruitCocktail", 20,
-			"CannedMushroomSoup", 20,
-			"CannedPeaches", 20,
-			"CannedPeas", 20,
-			"CannedPineapple", 20,
-			"CannedPotato2", 20,
-			"CannedSardines", 20,
-			"CannedTomato2", 20,
-			"Crisps", 20,
-			"Crisps2", 20,
-			"Crisps3", 20,
-			"Crisps4", 20,
-			"DoubleBarrelShotgun", 8,
-			"FirstAidKit", 4,
-			"LouisvilleMap1", 20,
-			"LouisvilleMap2", 20,
-			"LouisvilleMap3", 20,
-			"LouisvilleMap4", 20,
-			"LouisvilleMap5", 20,
-			"LouisvilleMap6", 20,
-			"LouisvilleMap7", 20,
-			"LouisvilleMap8", 20,
-			"LouisvilleMap9", 20,
-			"Machete", 4,
-			"MarchRidgeMap", 20,
-			"MuldraughMap", 20,
-			"RiversideMap", 20,
-			"RosewoodMap", 20,
-			"SewingKit", 2,
-			"Shotgun", 10,
-			"ShotgunShellsBox", 10,
-			"TinnedBeans", 20,
-			"TinnedSoup", 20,
-			"WestpointMap", 20,
-			"BrazilianFood.Fofura", 20,
-		}
-	}
-
-	SuburbsDistributions.Bag_WorkerBag = {
-		rolls = 1,
-		items = {
-			"BluePen", 8,
-			"Chocolate", 8,
-			"Cigarettes", 4,
-			"Crisps", 10,
-			"PeanutButterSandwich", 10,
-			"Peanuts", 8,
-			"Pen", 8,
-			"Pencil", 10,
-			"RedPen", 8,
-			"RubberBand", 1,
-			"Scissors", 2,
-			"SunflowerSeeds", 8,
-			"WaterBottleFull", 10,
-			"BrazilianFood.Fofura", 10,
-			"BrazilianFood.Bis", 8,
-		}
-	}
-
-	SuburbsDistributions.GroceryBag4 = {
-		rolls = 1,
-		items = {
-			"Aluminum", 50,
-			"BakingSoda", 50,
-			"Butter", 20,
-			"ChocolateChips", 50,
-			"ChocolateChips", 10,
-			"CocoaPowder", 50,
-			"CocoaPowder", 10,
-			"Flour", 100,
-			"Flour", 20,
-			"Lard", 20,
-			"Margarine", 20,
-			"OatsRaw", 20,
-			"OilOlive", 20,
-			"OilVegetable", 20,
-			"Sugar", 50,
-			"Sugar", 10,
-			"SugarBrown", 20,
-			"Yeast", 20,
-			"BrazilianFood.FarinhaTapioca", 100,
-			"BrazilianFood.FarinhaTapioca", 20,
-		}
-	}
-
-	SuburbsDistributions.GroceryBag2 = {
-		rolls = 1,
-		items = {
-			"Apple", 4,
-			"Avocado", 2,
-			"Banana", 4,
-			"BellPepper", 2,
-			"Broccoli", 4,
-			"CannedCarrots2", 4,
-			"CannedCorn", 4,
-			"CannedFruitCocktail", 4,
-			"CannedPeaches", 4,
-			"CannedPeas", 4,
-			"CannedPineapple", 4,
-			"CannedPotato2", 4,
-			"CannedTomato2", 4,
-			"Carrots", 4,
-			"Cherry", 4,
-			"Corn", 4,
-			"DriedBlackBeans", 4,
-			"DriedChickpeas", 4,
-			"DriedKidneyBeans", 4,
-			"DriedLentils", 4,
-			"DriedSplitPeas", 4,
-			"DriedWhiteBeans", 4,
-			"Eggplant", 4,
-			"farming.Cabbage", 4,
-			"farming.RedRadish", 4,
-			"farming.Strewberrie", 4,
-			"farming.Tomato", 4,
-			"Grapefruit", 4,
-			"Grapes", 4,
-			"Leek", 4,
-			"Lemon", 4,
-			"Lettuce", 4,
-			"Lime", 4,
-			"OatsRaw", 2,
-			"OilOlive", 2,
-			"OilVegetable", 2,
-			"Onion", 4,
-			"Orange", 4,
-			"Pasta", 2,
-			"Peach", 4,
-			"Pear", 4,
-			"PepperJalapeno", 2,
-			"Pickles", 6,
-			"Pineapple", 2,
-			"Rice", 2,
-			"WaterBottleFull", 2,
-			"Yoghurt", 2,
-			"Zucchini", 4,
-			"BrazilianFood.Yoki", 2,
-		}
-	}
-
-	SuburbsDistributions.all.Outfit_Bandit = {
-		rolls = 1,
-		items = {
-			"Cigarettes", 8,
-			"HuntingKnife", 6,
-			"WhiskeyFull", 0.1,
-			"BrazilianFood.CoroteFull", 0.1,
-		}
-	}
-
-	SuburbsDistributions.all.Outfit_Biker = {
-		rolls = 1,
-		items = {
-			"BeerCan", 10,
-			"Cigarettes", 8,
-			"HuntingKnife", 8,
-			"Pistol", 8,
-			"Revolver_Short", 6,
-			"WhiskeyFull", 0.1,
-			"BrazilianFood.CoroteFull", 0.1,
-		}
-	}
-
-	SuburbsDistributions.all.Outfit_Hobbo = {
-		rolls = 1,
-		items = {
-			"camping.CampingTentKit", 0.1,
-			"Cigarettes", 8,
-			"HuntingKnife", 6,
-			"MugWhite", 4,
-			"ToiletPaper", 10,
-			"WhiskeyEmpty", 10,
-			"WhiskeyFull", 0.1,
-			"BrazilianFood.CoroteFull", 0.1,
-		}
-	}
-
-	SuburbsDistributions.all.Outfit_Punk = {
-		rolls = 1,
-		items = {
-			"BeerBottle", 10,
-			"BeerCan", 10,
-			"Cigarettes", 8,
-			"HuntingKnife", 8,
-			"WhiskeyFull", 10,
-			"BrazilianFood.CoroteFull", 10,
-		}
-	}
-
-	SuburbsDistributions.all.Outfit_Raider = {
-		rolls = 1,
-		items = {
-			"Cigarettes", 8,
-			"HuntingKnife", 6,
-			"WhiskeyFull", 0.1,
-			"BrazilianFood.CoroteFull", 0.1,
-		}
-	}
-
-	SuburbsDistributions.all.Outfit_Redneck = {
-		rolls = 1,
-		items = {
-			"BeefJerky", 8,
-			"BeerCan", 10,
-			"Cigarettes", 8,
-			"DehydratedMeatStick", 10,
-			"HottieZ", 0.1,
-			"HuntingKnife", 6,
-			"WhiskeyFull", 0.1,
-			"BrazilianFood.CoroteFull", 0.1,
-		}
-	}
-
-	SuburbsDistributions.all.Outfit_Teacher = {
-		rolls = 1,
-		items = {
-			"BluePen", 8,
-			"Notebook", 10,
-			"Pencil", 10,
-			"RedPen", 8,
-			"WhiskeyFull", 0.1,
-			"BrazilianFood.CoroteFull", 0.1,
-		}
-	}
-
-	SuburbsDistributions.all.Outfit_Varsity = {
-		rolls = 1,
-		items = {
-			"Cigarettes", 8,
-			"ComicBook", 4,
-			"Disc_Retail", 4,
-			"Earbuds", 2,
-			"Headphones", 1,
-			"HottieZ", 0.1,
-			"Radio.CDPlayer", 2,
-			"WhiskeyFull", 0.1,
-			"BrazilianFood.CoroteFull", 0.1,
-		}
-	}
-
-	SuburbsDistributions.Lunchbag = {
-		rolls = 1,
-		items = {
-			"Apple", 20,
-			"Banana", 20,
-			"BeefJerky", 10,
-			"Burrito", 10,
-			"CheeseSandwich", 20,
-			"Chocolate", 10,
-			"CinnamonRoll", 10,
-			"CookieChocolateChip", 10,
-			"CookieJelly", 10,
-			"CookiesChocolate", 10,
-			"CookiesOatmeal", 10,
-			"CookiesShortbread", 10,
-			"DehydratedMeatStick", 10,
-			"DoughnutChocolate", 10,
-			"DoughnutFrosted", 10,
-			"DoughnutJelly", 10,
-			"DoughnutPlain", 10,
-			"GranolaBar", 20,
-			"MuffinFruit", 20,
-			"MuffinGeneric", 20,
-			"Orange", 20,
-			"Painauchocolat", 10,
-			"PeanutButterSandwich", 20,
-			"Pretzel", 10,
-			"Yoghurt", 20,
-			"BrazilianFood.Bis", 10,
-		}
-	}
-
-	SuburbsDistributions.Lunchbox = {
-		rolls = 1,
-		items = {
-			"Apple", 20,
-			"Banana", 20,
-			"BeefJerky", 10,
-			"Burrito", 10,
-			"CheeseSandwich", 20,
-			"Chocolate", 10,
-			"CinnamonRoll", 10,
-			"CookieChocolateChip", 10,
-			"CookieJelly", 10,
-			"CookiesChocolate", 10,
-			"CookiesOatmeal", 10,
-			"CookiesShortbread", 10,
-			"DehydratedMeatStick", 10,
-			"DoughnutChocolate", 10,
-			"DoughnutFrosted", 10,
-			"DoughnutJelly", 10,
-			"DoughnutPlain", 10,
-			"GranolaBar", 20,
-			"MuffinFruit", 20,
-			"MuffinGeneric", 20,
-			"Orange", 20,
-			"Painauchocolat", 10,
-			"PeanutButterSandwich", 20,
-			"Pretzel", 10,
-			"Yoghurt", 20,
-			"BrazilianFood.Bis", 10,
-		}
-	}
-
-	SuburbsDistributions.Lunchbox2 = {
-		rolls = 1,
-		items = {
-			"Apple", 20,
-			"Banana", 20,
-			"BeefJerky", 10,
-			"Burrito", 10,
-			"CheeseSandwich", 20,
-			"Chocolate", 10,
-			"CinnamonRoll", 10,
-			"CookieChocolateChip", 10,
-			"CookieJelly", 10,
-			"CookiesChocolate", 10,
-			"CookiesOatmeal", 10,
-			"CookiesShortbread", 10,
-			"DehydratedMeatStick", 10,
-			"DoughnutChocolate", 10,
-			"DoughnutFrosted", 10,
-			"DoughnutJelly", 10,
-			"DoughnutPlain", 10,
-			"GranolaBar", 20,
-			"MuffinFruit", 20,
-			"MuffinGeneric", 20,
-			"Orange", 20,
-			"Painauchocolat", 10,
-			"PeanutButterSandwich", 20,
-			"Pretzel", 10,
-			"Yoghurt", 20,
-			"BrazilianFood.Bis", 10,
-		}
-	}
-
-
-end
-Events.OnPreDistributionMerge.Add(preDistributionMerge);
+require 'Items/SuburbsDistributions'
+require "Items/ProceduralDistributions"
+
+table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, 4);
+
+table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, 4);
+
+table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["BandPracticeFridge"].items, 4);
+
+
+
+table.insert(ProceduralDistributions.list["BarCounterMisc"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["BarCounterMisc"].items, 10);
+
+table.insert(ProceduralDistributions.list["BarCounterMisc"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["BarCounterMisc"].items, 10);
+
+table.insert(ProceduralDistributions.list["BarCounterMisc"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["BarCounterMisc"].items, 10);
+
+table.insert(ProceduralDistributions.list["BarCounterMisc"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["BarCounterMisc"].items, 6);
+
+
+
+table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, 8);
+
+table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, 8);
+
+table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["CafeteriaDrinks"].items, 8);
+
+
+
+table.insert(ProceduralDistributions.list["ClassroomDesk"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["ClassroomDesk"].items, 1);
+
+table.insert(ProceduralDistributions.list["ClassroomDesk"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["ClassroomDesk"].items, 1);
+
+table.insert(ProceduralDistributions.list["ClassroomDesk"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["ClassroomDesk"].items, 1);
+
+
+
+table.insert(ProceduralDistributions.list["CrateSodaCans"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["CrateSodaCans"].items, 20);
+
+table.insert(ProceduralDistributions.list["CrateSodaCans"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["CrateSodaCans"].items, 10);
+
+table.insert(ProceduralDistributions.list["CrateSodaCans"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["CrateSodaCans"].items, 20);
+
+table.insert(ProceduralDistributions.list["CrateSodaCans"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["CrateSodaCans"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["FridgeBreakRoom"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["FridgeBreakRoom"].items, 4);
+
+table.insert(ProceduralDistributions.list["FridgeBreakRoom"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["FridgeBreakRoom"].items, 4);
+
+table.insert(ProceduralDistributions.list["FridgeBreakRoom"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["FridgeBreakRoom"].items, 4);
+
+
+
+table.insert(ProceduralDistributions.list["FridgeOffice"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["FridgeOffice"].items, 4);
+
+table.insert(ProceduralDistributions.list["FridgeOffice"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["FridgeOffice"].items, 4);
+
+table.insert(ProceduralDistributions.list["FridgeOffice"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["FridgeOffice"].items, 4);
+
+
+
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, 20);
+
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, 10);
+
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, 20);
+
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, 10);
+
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, 20);
+
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["FridgeSoda"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["FridgeTrailerPark"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["FridgeTrailerPark"].items, 2);
+
+table.insert(ProceduralDistributions.list["FridgeTrailerPark"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["FridgeTrailerPark"].items, 2);
+
+table.insert(ProceduralDistributions.list["FridgeTrailerPark"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["FridgeTrailerPark"].items, 2);
+
+
+
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, 10);
+
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, 10);
+
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, 10);
+
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, 10);
+
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, "BrazilianFood.PipocaDoce");
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, 8);
+
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, "BrazilianFood.BolachaDoce");
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, 8);
+
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["GasStorageCombo"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, 20);
+
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, 10);
+
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, 20);
+
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, 10);
+
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, 20);
+
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["GigamartBottles"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["KitchenBottles"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["KitchenBottles"].items, 10);
+
+table.insert(ProceduralDistributions.list["KitchenBottles"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["KitchenBottles"].items, 10);
+
+table.insert(ProceduralDistributions.list["KitchenBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["KitchenBottles"].items, 8);
+
+table.insert(ProceduralDistributions.list["KitchenBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["KitchenBottles"].items, 8);
+
+table.insert(ProceduralDistributions.list["KitchenBottles"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["KitchenBottles"].items, 2);
+
+
+
+table.insert(ProceduralDistributions.list["MotelFridge"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["MotelFridge"].items, 6);
+
+table.insert(ProceduralDistributions.list["MotelFridge"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["MotelFridge"].items, 6);
+
+table.insert(ProceduralDistributions.list["MotelFridge"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["MotelFridge"].items, 6);
+
+table.insert(ProceduralDistributions.list["MotelFridge"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["MotelFridge"].items, 6);
+
+table.insert(ProceduralDistributions.list["MotelFridge"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["MotelFridge"].items, 2);
+
+
+
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, 10);
+
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, 10);
+
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, 10);
+
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, 10);
+
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, 20);
+
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "BrazilianFood.PipocaDoce");
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, 8);
+
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "BrazilianFood.BolachaDoce");
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, 8);
+
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, 20);
+
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, 10);
+
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, 20);
+
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, 10);
+
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, 20);
+
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["StoreShelfDrinks"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, 20);
+
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, "BrazilianFood.Guarana");
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, 10);
+
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, 20);
+
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, "BrazilianFood.GuaranaJesus");
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, 10);
+
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, 20);
+
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, 20);
+
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, 10);
+
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["TheatreDrinks"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["FreezerGeneric"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["FreezerGeneric"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["FreezerRich"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["FreezerRich"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["FreezerTrailerPark"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["FreezerTrailerPark"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["FreezerIceCream"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["FreezerIceCream"].items, 50);
+
+table.insert(ProceduralDistributions.list["FreezerIceCream"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["FreezerIceCream"].items, 20);
+
+table.insert(ProceduralDistributions.list["FreezerIceCream"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["FreezerIceCream"].items, 20);
+
+table.insert(ProceduralDistributions.list["FreezerIceCream"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["FreezerIceCream"].items, 10);
+
+table.insert(ProceduralDistributions.list["FreezerIceCream"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["FreezerIceCream"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["TheatreKitchenFreezer"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["TheatreKitchenFreezer"].items, 50);
+
+table.insert(ProceduralDistributions.list["TheatreKitchenFreezer"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["TheatreKitchenFreezer"].items, 20);
+
+table.insert(ProceduralDistributions.list["TheatreKitchenFreezer"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["TheatreKitchenFreezer"].items, 20);
+
+table.insert(ProceduralDistributions.list["TheatreKitchenFreezer"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["TheatreKitchenFreezer"].items, 10);
+
+table.insert(ProceduralDistributions.list["TheatreKitchenFreezer"].items, "BrazilianFood.Acai");
+table.insert(ProceduralDistributions.list["TheatreKitchenFreezer"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["CafeteriaSnacks"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["CafeteriaSnacks"].items, 8);
+
+table.insert(ProceduralDistributions.list["CafeteriaSnacks"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["CafeteriaSnacks"].items, 10);
+
+table.insert(ProceduralDistributions.list["CafeteriaSnacks"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["CafeteriaSnacks"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["CrateChips"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["CrateChips"].items, 20);
+
+table.insert(ProceduralDistributions.list["CrateChips"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["CrateChips"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["GigamartCrisps"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["GigamartCrisps"].items, 20);
+
+table.insert(ProceduralDistributions.list["GigamartCrisps"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["GigamartCrisps"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["GroceryStorageCrate1"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["GroceryStorageCrate1"].items, 1);
+
+table.insert(ProceduralDistributions.list["GroceryStorageCrate1"].items, "BrazilianFood.Pacoquinha");
+table.insert(ProceduralDistributions.list["GroceryStorageCrate1"].items, 1);
+
+table.insert(ProceduralDistributions.list["GroceryStorageCrate1"].items, "BrazilianFood.Yoki");
+table.insert(ProceduralDistributions.list["GroceryStorageCrate1"].items, 1);
+
+table.insert(ProceduralDistributions.list["GroceryStorageCrate1"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["GroceryStorageCrate1"].items, 1);
+
+
+
+table.insert(ProceduralDistributions.list["KitchenDryFood"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["KitchenDryFood"].items, 4);
+
+table.insert(ProceduralDistributions.list["KitchenDryFood"].items, "BrazilianFood.Yoki");
+table.insert(ProceduralDistributions.list["KitchenDryFood"].items, 10);
+
+table.insert(ProceduralDistributions.list["KitchenDryFood"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["KitchenDryFood"].items, 6);
+
+
+
+table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, 10);
+
+table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, 0.01);
+
+table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, 4);
+
+
+
+table.insert(ProceduralDistributions.list["StoreShelfSnacks"].items, "BrazilianFood.Fofura");
+table.insert(ProceduralDistributions.list["StoreShelfSnacks"].items, 10);
+
+table.insert(ProceduralDistributions.list["StoreShelfSnacks"].items, "BrazilianFood.PipocaDoce");
+table.insert(ProceduralDistributions.list["StoreShelfSnacks"].items, 8);
+
+table.insert(ProceduralDistributions.list["StoreShelfSnacks"].items, "BrazilianFood.BolachaDoce");
+table.insert(ProceduralDistributions.list["StoreShelfSnacks"].items, 8);
+
+table.insert(ProceduralDistributions.list["StoreShelfSnacks"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["StoreShelfSnacks"].items, 8);
+
+
+
+table.insert(ProceduralDistributions.list["BakeryKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["BakeryKitchenBaking"].items, 10);
+
+table.insert(ProceduralDistributions.list["BakeryKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["BakeryKitchenBaking"].items, 20);
+
+
+
+table.insert(ProceduralDistributions.list["ChineseKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["ChineseKitchenBaking"].items, 20);
+
+table.insert(ProceduralDistributions.list["ChineseKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["ChineseKitchenBaking"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["CrateFlour"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["CrateFlour"].items, 50);
+
+table.insert(ProceduralDistributions.list["CrateFlour"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["CrateFlour"].items, 20);
+
+table.insert(ProceduralDistributions.list["CrateFlour"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["CrateFlour"].items, 20);
+
+table.insert(ProceduralDistributions.list["CrateFlour"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["CrateFlour"].items, 10);
+
+table.insert(ProceduralDistributions.list["CrateFlour"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["CrateFlour"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["GigamartBakingMisc"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["GigamartBakingMisc"].items, 20);
+
+table.insert(ProceduralDistributions.list["GigamartBakingMisc"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["GigamartBakingMisc"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["ItalianKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["ItalianKitchenBaking"].items, 10);
+
+table.insert(ProceduralDistributions.list["ItalianKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["ItalianKitchenBaking"].items, 20);
+
+table.insert(ProceduralDistributions.list["ItalianKitchenBaking"].items, "BrazilianFood.Yoki");
+table.insert(ProceduralDistributions.list["ItalianKitchenBaking"].items, 10);
+
+table.insert(ProceduralDistributions.list["ItalianKitchenBaking"].items, "BrazilianFood.Yoki");
+table.insert(ProceduralDistributions.list["ItalianKitchenBaking"].items, 20);
+
+
+
+table.insert(ProceduralDistributions.list["JaysKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["JaysKitchenBaking"].items, 20);
+
+table.insert(ProceduralDistributions.list["JaysKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["JaysKitchenBaking"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["KitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["KitchenBaking"].items, 10);
+
+table.insert(ProceduralDistributions.list["KitchenBaking"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["KitchenBaking"].items, 8);
+
+
+
+table.insert(ProceduralDistributions.list["PizzaKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["PizzaKitchenBaking"].items, 10);
+
+table.insert(ProceduralDistributions.list["PizzaKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["PizzaKitchenBaking"].items, 20);
+
+
+
+table.insert(ProceduralDistributions.list["StoreKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["StoreKitchenBaking"].items, 10);
+
+table.insert(ProceduralDistributions.list["StoreKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["StoreKitchenBaking"].items, 20);
+
+
+
+table.insert(ProceduralDistributions.list["WesternKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["WesternKitchenBaking"].items, 20);
+
+table.insert(ProceduralDistributions.list["WesternKitchenBaking"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(ProceduralDistributions.list["WesternKitchenBaking"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["CandyStoreSnacks"].items, "BrazilianFood.Pacoquinha");
+table.insert(ProceduralDistributions.list["CandyStoreSnacks"].items, 10);
+
+table.insert(ProceduralDistributions.list["CandyStoreSnacks"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["CandyStoreSnacks"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["GigamartCandy"].items, "BrazilianFood.Pacoquinha");
+table.insert(ProceduralDistributions.list["GigamartCandy"].items, 10);
+
+table.insert(ProceduralDistributions.list["GigamartCandy"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["GigamartCandy"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["CrateSodaBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["CrateSodaBottles"].items, 50);
+
+table.insert(ProceduralDistributions.list["CrateSodaBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["CrateSodaBottles"].items, 20);
+
+table.insert(ProceduralDistributions.list["CrateSodaBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["CrateSodaBottles"].items, 20);
+
+table.insert(ProceduralDistributions.list["CrateSodaBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["CrateSodaBottles"].items, 10);
+
+table.insert(ProceduralDistributions.list["CrateSodaBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["CrateSodaBottles"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["FridgeBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["FridgeBottles"].items, 20);
+
+table.insert(ProceduralDistributions.list["FridgeBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["FridgeBottles"].items, 20);
+
+table.insert(ProceduralDistributions.list["FridgeBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["FridgeBottles"].items, 10);
+
+table.insert(ProceduralDistributions.list["FridgeBottles"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["FridgeBottles"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["FridgeGeneric"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["FridgeGeneric"].items, 2);
+
+
+
+table.insert(ProceduralDistributions.list["FridgeRich"].items, "BrazilianFood.Dolly");
+table.insert(ProceduralDistributions.list["FridgeRich"].items, 2);
+
+
+
+table.insert(ProceduralDistributions.list["CratePasta"].items, "BrazilianFood.Yoki");
+table.insert(ProceduralDistributions.list["CratePasta"].items, 50);
+
+table.insert(ProceduralDistributions.list["CratePasta"].items, "BrazilianFood.Yoki");
+table.insert(ProceduralDistributions.list["CratePasta"].items, 20);
+
+table.insert(ProceduralDistributions.list["CratePasta"].items, "BrazilianFood.Yoki");
+table.insert(ProceduralDistributions.list["CratePasta"].items, 20);
+
+table.insert(ProceduralDistributions.list["CratePasta"].items, "BrazilianFood.Yoki");
+table.insert(ProceduralDistributions.list["CratePasta"].items, 10);
+
+table.insert(ProceduralDistributions.list["CratePasta"].items, "BrazilianFood.Yoki");
+table.insert(ProceduralDistributions.list["CratePasta"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["GigamartDryGoods"].items, "BrazilianFood.Yoki");
+table.insert(ProceduralDistributions.list["GigamartDryGoods"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["BarCounterLiquor"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["BarCounterLiquor"].items, 20);
+
+table.insert(ProceduralDistributions.list["BarCounterLiquor"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["BarCounterLiquor"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["BarCounterWeapon"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["BarCounterWeapon"].items, 20);
+
+table.insert(ProceduralDistributions.list["BarCounterWeapon"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["BarCounterWeapon"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["BarShelfLiquor"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["BarShelfLiquor"].items, 20);
+
+table.insert(ProceduralDistributions.list["BarShelfLiquor"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["BarShelfLiquor"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["DishCabinetGeneric"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["DishCabinetGeneric"].items, 4);
+
+
+
+table.insert(ProceduralDistributions.list["DishCabinetLiquor"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["DishCabinetLiquor"].items, 20);
+
+table.insert(ProceduralDistributions.list["DishCabinetLiquor"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["DishCabinetLiquor"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["DrugShackDrugs"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["DrugShackDrugs"].items, 20);
+
+table.insert(ProceduralDistributions.list["DrugShackDrugs"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["DrugShackDrugs"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["FoodGourmet"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["FoodGourmet"].items, 20);
+
+table.insert(ProceduralDistributions.list["FoodGourmet"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["FoodGourmet"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["JanitorMisc"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["JanitorMisc"].items, 0.1);
+
+
+
+table.insert(ProceduralDistributions.list["MechanicShelfMisc"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["MechanicShelfMisc"].items, 0.1);
+
+
+
+table.insert(ProceduralDistributions.list["OfficeDesk"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["OfficeDesk"].items, 0.1);
+
+
+
+table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["OfficeDeskHome"].items, 0.5);
+
+
+
+table.insert(ProceduralDistributions.list["PlankStashGun"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["PlankStashGun"].items, 2);
+
+
+
+table.insert(ProceduralDistributions.list["PlankStashMagazine"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["PlankStashMagazine"].items, 2);
+
+
+
+table.insert(ProceduralDistributions.list["PlankStashMoney"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["PlankStashMoney"].items, 2);
+
+
+
+table.insert(ProceduralDistributions.list["PoliceDesk"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["PoliceDesk"].items, 0.1);
+
+
+
+table.insert(ProceduralDistributions.list["SafehouseMedical"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["SafehouseMedical"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["StoreShelfWhiskey"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["StoreShelfWhiskey"].items, 50);
+
+table.insert(ProceduralDistributions.list["StoreShelfWhiskey"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["StoreShelfWhiskey"].items, 20);
+
+table.insert(ProceduralDistributions.list["StoreShelfWhiskey"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["StoreShelfWhiskey"].items, 20);
+
+table.insert(ProceduralDistributions.list["StoreShelfWhiskey"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["StoreShelfWhiskey"].items, 10);
+
+table.insert(ProceduralDistributions.list["StoreShelfWhiskey"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["StoreShelfWhiskey"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["WhiskeyBottlingFull"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["WhiskeyBottlingFull"].items, 50);
+
+table.insert(ProceduralDistributions.list["WhiskeyBottlingFull"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["WhiskeyBottlingFull"].items, 20);
+
+table.insert(ProceduralDistributions.list["WhiskeyBottlingFull"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["WhiskeyBottlingFull"].items, 20);
+
+table.insert(ProceduralDistributions.list["WhiskeyBottlingFull"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["WhiskeyBottlingFull"].items, 10);
+
+table.insert(ProceduralDistributions.list["WhiskeyBottlingFull"].items, "BrazilianFood.CoroteFull");
+table.insert(ProceduralDistributions.list["WhiskeyBottlingFull"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["CrateChocolate"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["CrateChocolate"].items, 50);
+
+table.insert(ProceduralDistributions.list["CrateChocolate"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["CrateChocolate"].items, 20);
+
+table.insert(ProceduralDistributions.list["CrateChocolate"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["CrateChocolate"].items, 20);
+
+table.insert(ProceduralDistributions.list["CrateChocolate"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["CrateChocolate"].items, 10);
+
+table.insert(ProceduralDistributions.list["CrateChocolate"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["CrateChocolate"].items, 10);
+
+
+
+table.insert(ProceduralDistributions.list["KitchenBreakfast"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["KitchenBreakfast"].items, 8);
+
+
+
+table.insert(ProceduralDistributions.list["TheatreSnacks"].items, "BrazilianFood.Bis");
+table.insert(ProceduralDistributions.list["TheatreSnacks"].items, 8);
+
+
+
+table.insert(SuburbsDistributions.list["vendingpop"].items, "BrazilianFood.Guarana");
+table.insert(SuburbsDistributions.list["vendingpop"].items, 10);
+
+table.insert(SuburbsDistributions.list["vendingpop"].items, "BrazilianFood.GuaranaJesus");
+table.insert(SuburbsDistributions.list["vendingpop"].items, 10);
+
+table.insert(SuburbsDistributions.list["vendingpop"].items, "BrazilianFood.Dolly");
+table.insert(SuburbsDistributions.list["vendingpop"].items, 10);
+
+
+
+table.insert(SuburbsDistributions.list["Bag_Schoolbag"].items, "BrazilianFood.Guarana");
+table.insert(SuburbsDistributions.list["Bag_Schoolbag"].items, 1);
+
+table.insert(SuburbsDistributions.list["Bag_Schoolbag"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["Bag_Schoolbag"].items, 1);
+
+table.insert(SuburbsDistributions.list["Bag_Schoolbag"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["Bag_Schoolbag"].items, 1);
+
+
+
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, "BrazilianFood.Guarana");
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, 4);
+
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, "BrazilianFood.GuaranaJesus");
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, 4);
+
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, 1);
+
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, 1);
+
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, "BrazilianFood.Pacoquinha");
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, 1);
+
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, "BrazilianFood.Dolly");
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, 2);
+
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, "BrazilianFood.Yoki");
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, 1);
+
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["GroceryBag1"].items, 1);
+
+
+
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, "BrazilianFood.Guarana");
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, 10);
+
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, "BrazilianFood.GuaranaJesus");
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, 10);
+
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, 10);
+
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, "BrazilianFood.Pacoquinha");
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, 10);
+
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, "BrazilianFood.Dolly");
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, 10);
+
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["GroceryBag3"].items, 20);
+
+
+
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, "BrazilianFood.Guarana");
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, 50);
+
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, "BrazilianFood.Guarana");
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, 10);
+
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, "BrazilianFood.GuaranaJesus");
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, 50);
+
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, "BrazilianFood.GuaranaJesus");
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, 10);
+
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, 50);
+
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, 10);
+
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, "BrazilianFood.Dolly");
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, 50);
+
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, "BrazilianFood.Dolly");
+table.insert(SuburbsDistributions.list["GroceryBag5"].items, 10);
+
+
+
+table.insert(SuburbsDistributions.list["Bag_Satchel"].items, "BrazilianFood.Guarana");
+table.insert(SuburbsDistributions.list["Bag_Satchel"].items, 1);
+
+table.insert(SuburbsDistributions.list["Bag_Satchel"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["Bag_Satchel"].items, 10);
+
+
+
+table.insert(SuburbsDistributions.list["vendingsnack"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["vendingsnack"].items, 10);
+
+
+
+table.insert(SuburbsDistributions.list["Bag_ALICEpack"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["Bag_ALICEpack"].items, 1);
+
+table.insert(SuburbsDistributions.list["Bag_ALICEpack"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["Bag_ALICEpack"].items, 1);
+
+
+
+table.insert(SuburbsDistributions.list["Bag_BigHikingBag"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["Bag_BigHikingBag"].items, 1);
+
+table.insert(SuburbsDistributions.list["Bag_BigHikingBag"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["Bag_BigHikingBag"].items, 1);
+
+
+
+table.insert(SuburbsDistributions.list["Bag_FoodSnacks"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["Bag_FoodSnacks"].items, 10);
+
+table.insert(SuburbsDistributions.list["Bag_FoodSnacks"].items, "BrazilianFood.PipocaDoce");
+table.insert(SuburbsDistributions.list["Bag_FoodSnacks"].items, 10);
+
+table.insert(SuburbsDistributions.list["Bag_FoodSnacks"].items, "BrazilianFood.BolachaDoce");
+table.insert(SuburbsDistributions.list["Bag_FoodSnacks"].items, 10);
+
+table.insert(SuburbsDistributions.list["Bag_FoodSnacks"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["Bag_FoodSnacks"].items, 20);
+
+table.insert(SuburbsDistributions.list["Bag_FoodSnacks"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["Bag_FoodSnacks"].items, 10);
+
+
+
+table.insert(SuburbsDistributions.list["Bag_NormalHikingBag"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["Bag_NormalHikingBag"].items, 1);
+
+table.insert(SuburbsDistributions.list["Bag_NormalHikingBag"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["Bag_NormalHikingBag"].items, 1);
+
+
+
+table.insert(SuburbsDistributions.list["Bag_SurvivorBag"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["Bag_SurvivorBag"].items, 20);
+
+
+
+table.insert(SuburbsDistributions.list["Bag_WorkerBag"].items, "BrazilianFood.Fofura");
+table.insert(SuburbsDistributions.list["Bag_WorkerBag"].items, 10);
+
+table.insert(SuburbsDistributions.list["Bag_WorkerBag"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["Bag_WorkerBag"].items, 8);
+
+
+
+table.insert(SuburbsDistributions.list["GroceryBag4"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(SuburbsDistributions.list["GroceryBag4"].items, 100);
+
+table.insert(SuburbsDistributions.list["GroceryBag4"].items, "BrazilianFood.FarinhaTapioca");
+table.insert(SuburbsDistributions.list["GroceryBag4"].items, 20);
+
+
+
+table.insert(SuburbsDistributions.list["GroceryBag2"].items, "BrazilianFood.Yoki");
+table.insert(SuburbsDistributions.list["GroceryBag2"].items, 2);
+
+
+
+table.insert(SuburbsDistributions.list["Outfit_Bandit"].items, "BrazilianFood.CoroteFull");
+table.insert(SuburbsDistributions.list["Outfit_Bandit"].items, 0.1);
+
+
+
+table.insert(SuburbsDistributions.list["Outfit_Biker"].items, "BrazilianFood.CoroteFull");
+table.insert(SuburbsDistributions.list["Outfit_Biker"].items, 0.1);
+
+
+
+table.insert(SuburbsDistributions.list["Outfit_Hobbo"].items, "BrazilianFood.CoroteFull");
+table.insert(SuburbsDistributions.list["Outfit_Hobbo"].items, 0.1);
+
+
+
+table.insert(SuburbsDistributions.list["Outfit_Punk"].items, "BrazilianFood.CoroteFull");
+table.insert(SuburbsDistributions.list["Outfit_Punk"].items, 10);
+
+
+
+table.insert(SuburbsDistributions.list["Outfit_Raider"].items, "BrazilianFood.CoroteFull");
+table.insert(SuburbsDistributions.list["Outfit_Raider"].items, 0.1);
+
+
+
+table.insert(SuburbsDistributions.list["Outfit_Redneck"].items, "BrazilianFood.CoroteFull");
+table.insert(SuburbsDistributions.list["Outfit_Redneck"].items, 0.1);
+
+
+
+table.insert(SuburbsDistributions.list["Outfit_Teacher"].items, "BrazilianFood.CoroteFull");
+table.insert(SuburbsDistributions.list["Outfit_Teacher"].items, 0.1);
+
+
+
+table.insert(SuburbsDistributions.list["Outfit_Varsity"].items, "BrazilianFood.CoroteFull");
+table.insert(SuburbsDistributions.list["Outfit_Varsity"].items, 0.1);
+
+
+
+table.insert(SuburbsDistributions.list["Lunchbag"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["Lunchbag"].items, 10);
+
+
+
+table.insert(SuburbsDistributions.list["Lunchbox"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["Lunchbox"].items, 10);
+
+
+
+table.insert(SuburbsDistributions.list["Lunchbox2"].items, "BrazilianFood.Bis");
+table.insert(SuburbsDistributions.list["Lunchbox2"].items, 10);
